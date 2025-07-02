@@ -3,95 +3,138 @@
 import { motion } from "framer-motion"
 import HeroImgSection from "../components/HeroImgSection"
 import StatsCounter from "../components/StatsCounter"
-import { FaUsers, FaGraduationCap, FaBuilding, FaHeart, FaGlobe } from "react-icons/fa"
+import { FaUsers, FaMosque, FaHandHoldingHeart,  FaGlobe } from "react-icons/fa"
+import { RiPlantLine } from "react-icons/ri"
+import { BsHouseHeart } from "react-icons/bs"
+import { FaBookQuran } from "react-icons/fa6";
 
 const ImpactPage = () => {
   const impactStories = [
     {
-      title: "Empowering Women Entrepreneurs",
+      title: "Ummah's Economic Empowerment",
       description:
-        "Fatima Khan from Karachi started her tailoring business with a ₨200,000 interest-free loan from Akhuwat. Today, she employs 15 women and has transformed her community.",
-      image: "https://assets.entrepreneur.com/content/3x2/2000/20170324044343-executive-461652-1920.jpeg",
-      stats: { beneficiaries: "2.1M+", category: "Women Entrepreneurs" },
-      color: "from-pink-500 to-rose-600",
+        "Through Qard-e-Hasana (benevolent loans), Sister Aisha from Lahore established a modest tailoring business, now employing 12 widows in her community. 'Akhuwat helped me fulfill both my economic needs and Islamic duty of helping others,' she shares.",
+      image: "https://images.unsplash.com/photo-1562169075-25820234781a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      stats: { beneficiaries: "2.5M+", category: "Sadaqah Jariyah Projects" },
+      color: "from-green-600 to-emerald-800",
+      ayah: "“Who is it that would loan Allah a goodly loan so He may multiply it for him many times over?” (Quran 2:245)"
     },
     {
-      title: "Breaking Educational Barriers",
+      title: "Preserving Islamic Education",
       description:
-        "Through our education loans, Ahmed Ali completed his engineering degree and now works at a leading tech company, supporting other students in his village.",
-      image: "/What-is-Education-Loan-1-1.png",
-      stats: { beneficiaries: "500K+", category: "Students Supported" },
-      color: "from-blue-500 to-indigo-600",
+        "Brother Yusuf completed his Islamic studies degree through our education loans and now teaches at a local madrasa. 'This interest-free support allowed me to seek knowledge without compromising my faith,' he explains.",
+      image: "https://images.unsplash.com/photo-1585036156171-384164a8c675?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      stats: { beneficiaries: "750K+", category: "Students Supported" },
+      color: "from-blue-600 to-indigo-800",
+      ayah: "“Allah will raise those who have believed among you and those who were given knowledge by degrees.” (Quran 58:11)"
     },
     {
-      title: "Building Sustainable Businesses",
+      title: "Halal Business Growth",
       description:
-        "Muhammad Hassan expanded his small grocery store into a chain of 5 outlets across Punjab, creating jobs for 50+ people in his community.",
-      image: "/businessloanbanner.jpg",
-      stats: { beneficiaries: "2M+", category: "Businesses Funded" },
-      color: "from-green-500 to-emerald-600",
+        "Brother Ibrahim transformed his small halal grocery into a thriving business with 8 locations. 'Akhuwat's model aligns completely with Islamic principles - no riba, just pure brotherhood,' he states.",
+      image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      stats: { beneficiaries: "3M+", category: "Halal Businesses" },
+      color: "from-amber-600 to-orange-700",
+      ayah: "“Allah has permitted trade and forbidden usury.” (Quran 2:275)"
     },
   ]
 
   const globalImpact = [
     {
-      icon: FaUsers,
-      title: "Lives Transformed",
-      value: "4.2M+",
-      description: "Families empowered through our programs",
-      color: "from-emerald-500 to-teal-600",
+      icon: FaHandHoldingHeart,
+      title: "Qard-e-Hasana Given",
+      value: "6.8M+",
+      description: "Interest-free loans following Sunnah",
+      color: "from-green-600 to-teal-700",
     },
     {
-      icon: FaBuilding,
-      title: "Businesses Created",
-      value: "2M+",
-      description: "Entrepreneurial ventures supported",
-      color: "from-blue-500 to-indigo-600",
+      icon: FaMosque,
+      title: "Mosques Supported",
+      value: "1.2K+",
+      description: "Places of worship and community",
+      color: "from-blue-600 to-indigo-700",
     },
     {
-      icon: FaGraduationCap,
-      title: "Students Educated",
-      value: "500K+",
-      description: "Educational dreams fulfilled",
-      color: "from-purple-500 to-pink-600",
+      icon: FaBookQuran,
+      title: "Islamic Graduates",
+      value: "850K+",
+      description: "Students of sacred knowledge",
+      color: "from-amber-600 to-orange-600",
     },
     {
-      icon: FaGlobe,
-      title: "Communities Served",
+      icon: RiPlantLine,
+      title: "Sustainable Projects",
       value: "15K+",
-      description: "Villages and cities reached",
-      color: "from-orange-500 to-red-600",
+      description: "Eco-friendly Islamic initiatives",
+      color: "from-emerald-600 to-green-700",
+    },
+    {
+      icon: BsHouseHeart,
+      title: "Homes Built",
+      value: "320K+",
+      description: "Islamic housing solutions",
+      color: "from-purple-600 to-violet-700",
+    },
+    {
+      icon: FaUsers,
+      title: "Families Lifted",
+      value: "8.2M+",
+      description: "From poverty with dignity",
+      color: "from-rose-600 to-pink-700",
     },
   ]
 
   return (
     <>
-      <HeroImgSection imageUrl="/Our-Mission.jpg" text="Our Global Impact" />
+      <HeroImgSection 
+        imageUrl="/islamic-microfinance.jpg" 
+        text="Divine Impact Through Islamic Finance" 
+        overlayText="In the way of Allah we transform lives"
+      />
 
-      <StatsCounter />
-
-      {/* Impact Stories */}
-      <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-emerald-50">
-        <div className="max-w-7xl mx-auto px-4">
-          {/* Header */}
+      {/* Quranic Introduction */}
+      <section className="py-16 bg-gradient-to-b from-white to-emerald-50">
+        <div className="max-w-5xl mx-auto px-4 text-center">
           <motion.div
-            className="text-center mb-16"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <div className="text-emerald-600 text-4xl mb-4" style={{ fontFamily: 'Traditional Arabic' }}>بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <span className="text-emerald-600">Islamic</span> Impact Through <span className="text-amber-600">Qard-e-Hasana</span>
+            </h2>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              "The parable of those who spend their wealth in the Way of Allah is that of a grain of corn that sprouts seven ears, and in every ear there are a hundred grains." (Quran 2:261)
+            </p>
+          </motion.div>
+
+          <StatsCounter />
+        </div>
+      </section>
+
+      {/* Impact Stories with Islamic Design */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Islamic Style Header */}
+          <motion.div
+            className="text-center mb-16 relative"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
+            <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 text-8xl opacity-5 text-emerald-600" style={{ fontFamily: 'Traditional Arabic' }}>أخوات</div>
             <motion.h2
-              className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+              className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 relative"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
               viewport={{ once: true }}
             >
-              Stories of{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
-                Transformation
-              </span>
+              Stories of <span className="text-emerald-600">Islamic</span> Transformation
             </motion.h2>
             <motion.p
               className="text-xl text-gray-600 max-w-3xl mx-auto"
@@ -100,13 +143,12 @@ const ImpactPage = () => {
               transition={{ delay: 0.3, duration: 0.6 }}
               viewport={{ once: true }}
             >
-              Real stories from real people whose lives have been transformed through Akhuwat Network's interest-free
-              financial solutions.
+              Witness how the Prophetic model of Qard-e-Hasana is reviving the economic spirit of the Ummah
             </motion.p>
           </motion.div>
 
-          {/* Stories Grid */}
-          <div className="space-y-16">
+          {/* Stories with Islamic Elements */}
+          <div className="space-y-20">
             {impactStories.map((story, index) => (
               <motion.div
                 key={index}
@@ -116,17 +158,22 @@ const ImpactPage = () => {
                 transition={{ delay: index * 0.2, duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                {/* Image */}
+                {/* Image with Islamic border */}
                 <motion.div
-                  className={`relative overflow-hidden rounded-3xl shadow-2xl ${index % 2 === 1 ? "lg:col-start-2" : ""}`}
+                  className={`relative overflow-hidden rounded-2xl shadow-lg ${index % 2 === 1 ? "lg:col-start-2" : ""}`}
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <img src={story.image || "/placeholder.svg"} alt={story.title} className="w-full h-80 object-cover" />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${story.color} opacity-20`}></div>
+                  <div className="absolute inset-0 border-4 border-emerald-500/20 rounded-2xl pointer-events-none"></div>
+                  <img 
+                    src={story.image} 
+                    alt={story.title} 
+                    className="w-full h-96 object-cover" 
+                  />
+                  <div className={`absolute inset-0 bg-gradient-to-t ${story.color} opacity-30`}></div>
 
-                  {/* Stats Overlay */}
-                  <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-2xl p-4">
+                  {/* Islamic Stats Overlay */}
+                  <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-md border border-emerald-100">
                     <div className={`text-2xl font-bold bg-gradient-to-r ${story.color} bg-clip-text text-transparent`}>
                       {story.stats.beneficiaries}
                     </div>
@@ -134,7 +181,7 @@ const ImpactPage = () => {
                   </div>
                 </motion.div>
 
-                {/* Content */}
+                {/* Content with Islamic design */}
                 <motion.div
                   className={`space-y-6 ${index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}`}
                   initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
@@ -142,23 +189,35 @@ const ImpactPage = () => {
                   transition={{ delay: 0.3, duration: 0.6 }}
                   viewport={{ once: true }}
                 >
-                  <div
-                    className={`w-12 h-12 bg-gradient-to-r ${story.color} rounded-2xl flex items-center justify-center`}
-                  >
-                    <FaHeart className="text-white text-xl" />
+                  <div className="flex items-center gap-4">
+                    <div className={`w-12 h-12 bg-gradient-to-r ${story.color} rounded-xl flex items-center justify-center`}>
+                      <FaHandHoldingHeart className="text-white text-xl" />
+                    </div>
+                    <div className="text-emerald-600 font-arabic text-sm">{story.ayah}</div>
                   </div>
 
                   <h3 className="text-3xl font-bold text-gray-900">{story.title}</h3>
 
                   <p className="text-lg text-gray-600 leading-relaxed">{story.description}</p>
 
-                  <motion.button
-                    className={`bg-gradient-to-r ${story.color} text-white px-8 py-4 rounded-full font-bold hover:shadow-lg transition-all duration-300`}
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    Read Full Story
-                  </motion.button>
+                  <div className="flex gap-4">
+                    <motion.a
+                      href="/stories"
+                      className={`bg-gradient-to-r ${story.color} text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300 flex items-center gap-2`}
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      Read Full Story
+                    </motion.a>
+                    <motion.a
+                      href="/donate"
+                      className="bg-white border border-emerald-600 text-emerald-600 px-6 py-3 rounded-lg font-medium hover:bg-emerald-50 transition-all duration-300 flex items-center gap-2"
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      Support Similar Projects
+                    </motion.a>
+                  </div>
                 </motion.div>
               </motion.div>
             ))}
@@ -166,11 +225,14 @@ const ImpactPage = () => {
         </div>
       </section>
 
-      {/* Global Impact Section */}
-      <section className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-40 h-40 bg-white rounded-full animate-pulse blur-xl"></div>
-          <div className="absolute bottom-20 right-20 w-32 h-32 bg-white rounded-full animate-ping blur-xl"></div>
+      {/* Global Impact Section with Islamic Patterns */}
+      <section className="py-20 bg-gradient-to-br from-emerald-800 to-teal-900 text-white relative overflow-hidden">
+        {/* Islamic geometric pattern overlay */}
+        <div className="absolute inset-0 opacity-10 bg-[url('/islamic-pattern.png')] bg-repeat"></div>
+        
+        {/* Floating mosque silhouette */}
+        <div className="absolute top-20 right-20 opacity-5">
+          <FaMosque className="text-9xl" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -181,76 +243,105 @@ const ImpactPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Global Impact</h2>
-            <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
-              Since 2001, Akhuwat Network has been creating lasting change across Pakistan and beyond.
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Ummah's Impact</h2>
+            <p className="text-xl text-emerald-200 max-w-3xl mx-auto">
+              "The believer's shade on the Day of Judgment will be his charity." (Tirmidhi)
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {globalImpact.map((impact, index) => (
               <motion.div
                 key={index}
-                className="text-center bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20"
+                className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:border-emerald-400 transition-all"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.05, y: -5 }}
+                whileHover={{ scale: 1.03, y: -5 }}
               >
                 <motion.div
-                  className={`w-16 h-16 bg-gradient-to-r ${impact.color} rounded-2xl flex items-center justify-center mx-auto mb-6`}
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.6 }}
+                  className={`w-16 h-16 bg-gradient-to-r ${impact.color} rounded-xl flex items-center justify-center mx-auto mb-6`}
+                  whileHover={{ rotate: 10, scale: 1.1 }}
+                  transition={{ duration: 0.4 }}
                 >
                   <impact.icon className="text-2xl text-white" />
                 </motion.div>
 
                 <motion.div
-                  className="text-4xl font-bold mb-2"
-                  animate={{ scale: [1, 1.05, 1] }}
-                  transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.5 }}
+                  className="text-4xl font-bold mb-2 font-arabic"
+                  animate={{ scale: [1, 1.02, 1] }}
+                  transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, delay: index * 0.3 }}
                 >
                   {impact.value}
                 </motion.div>
 
                 <h3 className="text-xl font-bold mb-2">{impact.title}</h3>
-                <p className="text-emerald-100">{impact.description}</p>
+                <p className="text-emerald-200">{impact.description}</p>
               </motion.div>
             ))}
           </div>
 
-          {/* Call to Action */}
+          {/* Islamic Call to Action */}
           <motion.div
-            className="text-center mt-16"
+            className="text-center mt-20"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-bold mb-6">Be Part of This Impact</h3>
-            <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
-              Join millions of Pakistanis who are building a better future through ethical finance.
+            <div className="text-emerald-300 mb-4 text-lg">"The example of those who spend their wealth in the way of Allah..." (Quran 2:261)</div>
+            <h3 className="text-3xl font-bold mb-6">Join This Sadaqah Jariyah</h3>
+            <p className="text-xl text-emerald-200 mb-8 max-w-2xl mx-auto">
+              Your contribution becomes an ongoing charity that continues to benefit the Ummah.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.a
-                href="/loans"
-                className="bg-white text-emerald-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-emerald-50 transition-all duration-300"
+                href="/donate"
+                className="bg-amber-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-700 transition-all duration-300 flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Apply for Loan
+                Give Qard-e-Hasana
               </motion.a>
               <motion.a
-                href="/about-us"
-                className="bg-white/10 border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300"
+                href="/volunteer"
+                className="bg-emerald-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-800 transition-all duration-300 flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Learn More
+                Volunteer Service
+              </motion.a>
+              <motion.a
+                href="/pray"
+                className="bg-white/10 border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-2"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Make Dua for Us
               </motion.a>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Quranic Closing */}
+      <section className="py-16 bg-amber-50 text-center">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-emerald-600 text-3xl mb-6" style={{ fontFamily: 'Traditional Arabic' }}>
+            وَمَا تُقَدِّمُوا لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ اللَّهِ
+          </div>
+          <p className="text-xl text-gray-700 mb-6">
+            "Whatever good you put forward for yourselves - you will find it with Allah." (Quran 2:110)
+          </p>
+          <motion.a
+            href="/about"
+            className="inline-block bg-gradient-to-r from-emerald-600 to-teal-700 text-white px-8 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Learn About Our Islamic Model
+          </motion.a>
         </div>
       </section>
     </>

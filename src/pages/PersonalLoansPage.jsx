@@ -18,6 +18,9 @@ import {
   FaCar,
   FaRing,
   FaMedkit,
+  FaMosque,
+  FaQuran,
+  FaHandsHelping,
 } from "react-icons/fa"
 
 const PersonalLoansPage = () => {
@@ -26,82 +29,88 @@ const PersonalLoansPage = () => {
 
   const loanFeatures = [
     {
-      icon: FaMoneyBillWave,
-      title: "Up to ₨10 Lacs",
-      description: "Substantial personal financing for your needs",
+      icon: FaQuran,
+      title: "Qard-e-Hasan",
+      description: "Interest-free loans following Islamic principles",
+      color: "text-green-600",
+    },
+    {
+      icon: FaMosque,
+      title: "Mosque-Based",
+      description: "Transparent disbursement in mosque settings",
       color: "text-blue-600",
     },
     {
-      icon: FaShieldAlt,
-      title: "0% Interest Rate",
-      description: "Completely interest-free personal loans",
-      color: "text-emerald-600",
-    },
-    {
       icon: FaClock,
-      title: "Quick 3-Day Approval",
-      description: "Fast processing for urgent personal needs",
+      title: "Quick Approval",
+      description: "Fast processing within 3-5 working days",
       color: "text-purple-600",
     },
     {
-      icon: FaHandshake,
-      title: "Flexible Terms",
-      description: "Customized repayment plans up to 5 years",
-      color: "text-orange-600",
+      icon: FaHandsHelping,
+      title: "Community Support",
+      description: "Group-based lending with social responsibility",
+      color: "text-amber-600",
     },
   ]
 
   const loanPurposes = [
     {
       icon: FaRing,
-      title: "Wedding Expenses",
-      description: "Make your special day memorable without financial stress",
+      title: "Marriage Support",
+      description: "Halal financing for wedding expenses",
       loanRange: "₨2L - ₨8L",
+      examples: ["Wedding ceremony", "Dowry", "Marriage essentials"],
       color: "from-pink-500 to-rose-600",
     },
     {
       icon: FaMedkit,
       title: "Medical Treatment",
-      description: "Access quality healthcare for you and your family",
+      description: "Healthcare financing for you and family",
       loanRange: "₨50K - ₨5L",
+      examples: ["Hospital bills", "Surgeries", "Medicines"],
       color: "from-red-500 to-pink-600",
     },
     {
       icon: FaGraduationCap,
-      title: "Higher Education",
-      description: "Invest in education for a brighter future",
+      title: "Education",
+      description: "Invest in Islamic and secular education",
       loanRange: "₨1L - ₨6L",
+      examples: ["School fees", "University tuition", "Vocational training"],
       color: "from-blue-500 to-indigo-600",
     },
     {
       icon: FaHome,
-      title: "Home Renovation",
-      description: "Improve your living space and comfort",
+      title: "Home Needs",
+      description: "Improve your family's living conditions",
       loanRange: "₨1.5L - ₨7L",
-      color: "from-emerald-500 to-teal-600",
+      examples: ["Renovation", "Furniture", "Utilities"],
+      color: "from-green-500 to-emerald-600",
     },
     {
       icon: FaCar,
-      title: "Vehicle Purchase",
-      description: "Buy a car or motorcycle for transportation",
+      title: "Transportation",
+      description: "Vehicle purchase for livelihood",
       loanRange: "₨3L - ₨10L",
+      examples: ["Motorcycle", "Car", "Work vehicle"],
       color: "from-purple-500 to-indigo-600",
     },
     {
       icon: FaHeart,
-      title: "Family Events",
-      description: "Celebrate life's important moments",
+      title: "Family Needs",
+      description: "Support for essential family requirements",
       loanRange: "₨75K - ₨4L",
-      color: "from-orange-500 to-red-600",
+      examples: ["Essential items", "Family events", "Debt relief"],
+      color: "from-amber-500 to-orange-600",
     },
   ]
 
   const eligibilityCriteria = [
-    "Pakistani citizen aged 21-65 years",
-    "Stable monthly income (minimum ₨25,000)",
+    "Pakistani Muslim aged 21-65 years",
+    "Minimum monthly income ₨25,000",
     "Valid CNIC and proof of residence",
-    "Bank statements for last 6 months",
-    "Two guarantors with valid CNICs",
+    "Two Muslim guarantors with CNICs",
+    "Commitment to Islamic values",
     "Clean credit history preferred",
   ]
 
@@ -110,12 +119,12 @@ const PersonalLoansPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-green-50">
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-24 overflow-hidden bg-[url('/islamic-pattern.jpg')] bg-opacity-5">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-10 w-96 h-96 bg-blue-400 rounded-full animate-float blur-3xl"></div>
-          <div className="absolute bottom-32 right-20 w-80 h-80 bg-purple-400 rounded-full animate-float-reverse blur-3xl"></div>
+          <div className="absolute bottom-32 right-20 w-80 h-80 bg-green-400 rounded-full animate-float-reverse blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -127,12 +136,12 @@ const PersonalLoansPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-2xl">
-                  <FaUser className="text-white text-2xl" />
+                <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center shadow-2xl">
+                  <FaMosque className="text-white text-2xl" />
                 </div>
                 <div>
-                  <span className="text-blue-600 font-bold text-xl block">Akhuwat Network</span>
-                  <span className="text-gray-500 text-sm">Personal Finance Solutions</span>
+                  <span className="text-green-600 font-bold text-xl block">Akhuwat Islamic Finance</span>
+                  <span className="text-gray-600 text-sm">Qard-e-Hasan Personal Solutions</span>
                 </div>
               </motion.div>
 
@@ -142,9 +151,9 @@ const PersonalLoansPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
-                Personal{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                  Loans
+                Islamic{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
+                  Personal Finance
                 </span>
               </motion.h1>
 
@@ -154,8 +163,8 @@ const PersonalLoansPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
               >
-                Fulfill your personal dreams and handle life's important moments with our Sharia-compliant,
-                interest-free personal loans. From weddings to education, we're here to support you.
+                Fulfill your personal needs and life goals through our Sharia-compliant, interest-free Qard-e-Hasan.
+                Ethical financing that aligns with your Islamic values.
               </motion.p>
 
               <motion.div
@@ -185,10 +194,10 @@ const PersonalLoansPage = () => {
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
                 <motion.a
-                href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
+                  href="https://wa.me/923281969250"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-10 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -197,7 +206,7 @@ const PersonalLoansPage = () => {
                 </motion.a>
 
                 <motion.button
-                  className="bg-white/80 backdrop-blur-sm border-2 border-blue-600 text-blue-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-blue-50 transition-all duration-300 flex items-center justify-center gap-3"
+                  className="bg-white/80 backdrop-blur-sm border-2 border-green-600 text-green-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-green-50 transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -213,8 +222,8 @@ const PersonalLoansPage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCmeqPTRZkSDQTQhob2ep1kXqpacYQyjRJkg&s" alt="Personal Loans" className="w-full h-96 object-cover" />
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-green-600">
+                <img src="/akhuwat-personal.jpg" alt="Islamic Personal Finance" className="w-full h-96 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
                 <motion.div
@@ -225,8 +234,8 @@ const PersonalLoansPage = () => {
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="text-center">
-                    <div className="text-3xl font-black text-blue-600 mb-2">₨10L</div>
-                    <div className="text-sm text-gray-600 font-semibold">Maximum Loan</div>
+                    <div className="text-3xl font-black text-green-600 mb-2">₨10L</div>
+                    <div className="text-sm text-gray-600 font-semibold">Maximum Qard</div>
                   </div>
                 </motion.div>
 
@@ -238,12 +247,58 @@ const PersonalLoansPage = () => {
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="text-center">
-                    <div className="text-3xl font-black text-emerald-600 mb-2">3</div>
-                    <div className="text-sm text-gray-600 font-semibold">Days Approval</div>
+                    <div className="text-3xl font-black text-blue-600 mb-2">0%</div>
+                    <div className="text-sm text-gray-600 font-semibold">Interest-Free</div>
                   </div>
                 </motion.div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Islamic Values Section */}
+      <section className="py-16 bg-green-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-black text-gray-900 mb-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">Islamic Principles</span> Behind Our Model
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Akhuwat operates on the Quranic concept of Qard-e-Hasan (benevolent loan)
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-green-100 text-center">
+              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaQuran className="text-green-600 text-3xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Quranic Foundation</h3>
+              <p className="text-gray-600">
+                "Who is it that would loan Allah a goodly loan so He may multiply it for him many times over?" (2:245)
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-blue-100 text-center">
+              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaHandsHelping className="text-blue-600 text-3xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Brotherhood</h3>
+              <p className="text-gray-600">
+                "The believers are but brothers" (49:10) - We treat all applicants as family in need
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-amber-100 text-center">
+              <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaMosque className="text-amber-600 text-3xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Mosque-Based</h3>
+              <p className="text-gray-600">
+                Loans are disbursed in mosques to maintain transparency and Islamic environment
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -259,24 +314,27 @@ const PersonalLoansPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-5xl font-black text-gray-900 mb-8">
-              Personal Loan{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              Qard-e-Hasan{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
                 Calculator
               </span>
             </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Calculate your interest-free personal finance repayment schedule
+            </p>
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
-              className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-12"
+              className="bg-gradient-to-br from-green-50 to-blue-50 rounded-3xl p-12 border border-green-200"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
               <div className="flex items-center gap-4 mb-8">
-                <FaCalculator className="text-3xl text-blue-600" />
-                <h3 className="text-3xl font-bold text-gray-900">Calculate Your Loan</h3>
+                <FaCalculator className="text-3xl text-green-600" />
+                <h3 className="text-3xl font-bold text-gray-900">Calculate Your Qard</h3>
               </div>
 
               <div className="space-y-8">
@@ -300,7 +358,7 @@ const PersonalLoansPage = () => {
                 </div>
 
                 <div>
-                  <label className="block text-lg font-semibold text-gray-700 mb-4">Loan Term: {loanTerm} months</label>
+                  <label className="block text-lg font-semibold text-gray-700 mb-4">Repayment Term: {loanTerm} months</label>
                   <input
                     type="range"
                     min="6"
@@ -325,39 +383,39 @@ const PersonalLoansPage = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-3xl font-bold text-gray-900 mb-8">Loan Summary</h3>
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">Repayment Summary</h3>
 
               <div className="space-y-6">
                 <div className="flex justify-between items-center p-4 bg-gray-50 rounded-2xl">
-                  <span className="text-lg font-semibold text-gray-700">Loan Amount</span>
-                  <span className="text-2xl font-bold text-blue-600">₨{loanAmount.toLocaleString()}</span>
+                  <span className="text-lg font-semibold text-gray-700">Qard Amount</span>
+                  <span className="text-2xl font-bold text-green-600">₨{loanAmount.toLocaleString()}</span>
                 </div>
 
                 <div className="flex justify-between items-center p-4 bg-gray-50 rounded-2xl">
-                  <span className="text-lg font-semibold text-gray-700">Interest Rate</span>
-                  <span className="text-2xl font-bold text-emerald-600">0%</span>
+                  <span className="text-lg font-semibold text-gray-700">Profit Rate</span>
+                  <span className="text-2xl font-bold text-green-600">0%</span>
                 </div>
 
                 <div className="flex justify-between items-center p-4 bg-gray-50 rounded-2xl">
-                  <span className="text-lg font-semibold text-gray-700">Loan Term</span>
-                  <span className="text-2xl font-bold text-purple-600">{loanTerm} months</span>
+                  <span className="text-lg font-semibold text-gray-700">Repayment Term</span>
+                  <span className="text-2xl font-bold text-blue-600">{loanTerm} months</span>
                 </div>
 
-                <div className="flex justify-between items-center p-6 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl text-white">
+                <div className="flex justify-between items-center p-6 bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl text-white">
                   <span className="text-lg font-semibold">Monthly Payment</span>
                   <span className="text-3xl font-black">₨{calculateMonthlyPayment().toLocaleString()}</span>
                 </div>
 
                 <div className="text-center pt-6">
                   <motion.a
-                  href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 mx-auto"
+                    href="https://wa.me/923281969250"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 mx-auto"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    Apply for This Loan
+                    Apply for Qard-e-Hasan
                     <FaArrowRight />
                   </motion.a>
                 </div>
@@ -368,7 +426,7 @@ const PersonalLoansPage = () => {
       </section>
 
       {/* Loan Purposes */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-purple-50">
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-green-50">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             className="text-center mb-20"
@@ -378,13 +436,13 @@ const PersonalLoansPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-5xl font-black text-gray-900 mb-8">
-              What Can You{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                Finance?
+              Halal{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
+                Purposes
               </span>
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Our personal loans cover a wide range of life's important moments and needs
+              Our Qard-e-Hasan covers various personal needs while maintaining Islamic principles
             </p>
           </motion.div>
 
@@ -409,7 +467,15 @@ const PersonalLoansPage = () => {
                 </div>
 
                 <div className="p-6">
-                  <p className="text-gray-600 leading-relaxed">{purpose.description}</p>
+                  <p className="text-gray-600 mb-4">{purpose.description}</p>
+                  <div className="space-y-2">
+                    {purpose.examples.map((example, i) => (
+                      <div key={i} className="flex items-center gap-2 text-sm text-gray-700">
+                        <FaCheckCircle className="text-green-500 text-xs" />
+                        <span>{example}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -429,17 +495,17 @@ const PersonalLoansPage = () => {
           >
             <h2 className="text-5xl font-black text-gray-900 mb-8">
               Eligibility{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
                 Criteria
               </span>
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Simple requirements to qualify for your personal loan
+              Requirements to qualify for Qard-e-Hasan personal finance
             </p>
           </motion.div>
 
           <motion.div
-            className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-12"
+            className="bg-gradient-to-br from-green-50 to-blue-50 rounded-3xl p-12 border border-green-200"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -456,7 +522,7 @@ const PersonalLoansPage = () => {
                   viewport={{ once: true }}
                   whileHover={{ x: 5 }}
                 >
-                  <FaCheckCircle className="text-emerald-500 text-xl flex-shrink-0" />
+                  <FaCheckCircle className="text-green-500 text-xl flex-shrink-0" />
                   <span className="text-gray-700 font-medium">{criteria}</span>
                 </motion.div>
               ))}
@@ -466,7 +532,7 @@ const PersonalLoansPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-blue-600 to-purple-600 text-white relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-r from-green-600 to-blue-600 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-48 translate-x-48"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-white rounded-full translate-y-40 -translate-x-40"></div>
@@ -480,23 +546,23 @@ const PersonalLoansPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl md:text-6xl font-black mb-8">Make Your Dreams Reality</h2>
-            <p className="text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Don't let financial constraints hold you back from life's important moments. Apply for an interest-free
-              personal loan today and take the next step towards your goals.
+            <h2 className="text-5xl md:text-6xl font-black mb-8">Begin Your Ethical Financial Journey</h2>
+            <p className="text-2xl text-green-100 mb-12 max-w-4xl mx-auto leading-relaxed">
+              Don't compromise your Islamic values for financial needs. Apply for our Qard-e-Hasan personal finance
+              solution today and fulfill your needs the halal way.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-              href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                className="bg-white text-blue-600 px-12 py-6 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl flex items-center justify-center gap-3"
+                href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-green-600 px-12 py-6 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <FaUser />
-                Apply for Personal Loan
+                <FaMosque />
+                Apply for Qard-e-Hasan
               </motion.a>
 
               <motion.button

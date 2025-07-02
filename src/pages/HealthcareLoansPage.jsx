@@ -17,33 +17,36 @@ import {
   FaAmbulance,
   FaStethoscope,
   FaWheelchair,
+  FaMosque,
+  FaQuran,
+  FaHandsHelping,
 } from "react-icons/fa"
 
-const HealthcareLoansPage = () => {
+const HealthcareSupportPage = () => {
   const [loanAmount, setLoanAmount] = useState(300000)
   const [loanTerm, setLoanTerm] = useState(24)
 
   const loanFeatures = [
     {
-      icon: FaMoneyBillWave,
-      title: "Up to ₨15 Lacs",
-      description: "Comprehensive healthcare financing solutions",
-      color: "text-red-600",
+      icon: FaQuran,
+      title: "Qard-e-Hasan",
+      description: "Interest-free medical financing following Islamic principles",
+      color: "text-green-600",
     },
     {
-      icon: FaShieldAlt,
-      title: "0% Interest Rate",
-      description: "Interest-free medical loans for all treatments",
-      color: "text-emerald-600",
+      icon: FaMosque,
+      title: "Mosque-Based Support",
+      description: "Community-driven healthcare assistance",
+      color: "text-blue-600",
     },
     {
       icon: FaClock,
       title: "Emergency 24hr Approval",
       description: "Urgent medical cases processed immediately",
-      color: "text-blue-600",
+      color: "text-red-600",
     },
     {
-      icon: FaHandshake,
+      icon: FaHandsHelping,
       title: "Direct Hospital Payment",
       description: "We pay directly to healthcare providers",
       color: "text-purple-600",
@@ -53,48 +56,48 @@ const HealthcareLoansPage = () => {
   const medicalCategories = [
     {
       icon: FaHospital,
-      title: "Surgery & Operations",
-      description: "Major and minor surgical procedures",
-      examples: ["Cardiac Surgery", "Orthopedic Surgery", "General Surgery", "Emergency Operations"],
+      title: "Surgical Procedures",
+      description: "Major and minor surgical interventions",
+      examples: ["Cardiac Surgery", "Orthopedic Procedures", "General Surgery", "Emergency Operations"],
       loanRange: "₨2L - ₨15L",
       color: "from-red-500 to-pink-600",
     },
     {
       icon: FaStethoscope,
-      title: "Chronic Disease Treatment",
-      description: "Long-term medical care and treatment",
-      examples: ["Cancer Treatment", "Diabetes Care", "Heart Disease", "Kidney Treatment"],
+      title: "Chronic Illness Care",
+      description: "Long-term medical treatment plans",
+      examples: ["Cancer Treatment", "Diabetes Management", "Cardiac Care", "Renal Treatment"],
       loanRange: "₨1L - ₨10L",
       color: "from-blue-500 to-indigo-600",
     },
     {
       icon: FaUserMd,
       title: "Specialist Consultations",
-      description: "Expert medical consultations and diagnostics",
+      description: "Expert medical opinions and diagnostics",
       examples: ["Cardiology", "Neurology", "Oncology", "Specialized Tests"],
       loanRange: "₨25K - ₨3L",
       color: "from-emerald-500 to-teal-600",
     },
     {
       icon: FaWheelchair,
-      title: "Rehabilitation & Therapy",
-      description: "Physical therapy and rehabilitation services",
+      title: "Rehabilitation Services",
+      description: "Therapy and recovery programs",
       examples: ["Physiotherapy", "Speech Therapy", "Occupational Therapy", "Medical Equipment"],
       loanRange: "₨50K - ₨5L",
       color: "from-purple-500 to-indigo-600",
     },
     {
       icon: FaPills,
-      title: "Medication & Pharmacy",
-      description: "Prescription medicines and medical supplies",
-      examples: ["Chronic Medications", "Expensive Drugs", "Medical Supplies", "Health Supplements"],
+      title: "Medications & Pharmacy",
+      description: "Essential medicines and medical supplies",
+      examples: ["Chronic Medications", "Specialty Drugs", "Medical Supplies", "Health Essentials"],
       loanRange: "₨15K - ₨2L",
-      color: "from-orange-500 to-red-600",
+      color: "from-amber-500 to-orange-600",
     },
     {
       icon: FaAmbulance,
-      title: "Emergency Medical Care",
-      description: "Urgent medical treatments and emergency care",
+      title: "Emergency Healthcare",
+      description: "Critical medical interventions",
       examples: ["Emergency Room", "Ambulance Services", "ICU Treatment", "Trauma Care"],
       loanRange: "₨1L - ₨8L",
       color: "from-yellow-500 to-orange-600",
@@ -104,12 +107,12 @@ const HealthcareLoansPage = () => {
   const partnerHospitals = [
     "Shaukat Khanum Memorial Cancer Hospital",
     "Aga Khan University Hospital",
-    "Lahore General Hospital",
-    "Services Hospital Lahore",
-    "Combined Military Hospital (CMH)",
-    "National Institute of Cardiovascular Diseases",
+    "Pakistan Kidney & Liver Institute",
     "Children's Hospital Lahore",
+    "National Institute of Cardiovascular Diseases",
     "Mayo Hospital Lahore",
+    "Jinnah Hospital Lahore",
+    "Services Institute of Medical Sciences",
   ]
 
   const calculateMonthlyPayment = () => {
@@ -117,11 +120,11 @@ const HealthcareLoansPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-red-50">
+    <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-green-50">
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-24 overflow-hidden bg-[url('/islamic-pattern.jpg')] bg-opacity-5">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-red-400 rounded-full animate-float blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-green-400 rounded-full animate-float blur-3xl"></div>
           <div className="absolute bottom-32 right-20 w-80 h-80 bg-blue-400 rounded-full animate-float-reverse blur-3xl"></div>
         </div>
 
@@ -134,12 +137,12 @@ const HealthcareLoansPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-red-600 to-pink-600 rounded-full flex items-center justify-center shadow-2xl">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center shadow-2xl">
                   <FaHeartbeat className="text-white text-2xl" />
                 </div>
                 <div>
-                  <span className="text-red-600 font-bold text-xl block">Akhuwat Network</span>
-                  <span className="text-gray-500 text-sm">Healthcare Finance Solutions</span>
+                  <span className="text-green-600 font-bold text-xl block">Akhuwat Islamic Healthcare</span>
+                  <span className="text-gray-600 text-sm">Qard-e-Hasan Medical Support</span>
                 </div>
               </motion.div>
 
@@ -149,8 +152,10 @@ const HealthcareLoansPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
-                Healthcare{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-600">Loans</span>
+                Islamic{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
+                  Healthcare Support
+                </span>
               </motion.h1>
 
               <motion.p
@@ -159,8 +164,9 @@ const HealthcareLoansPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
               >
-                Your health shouldn't wait for finances. Get immediate access to quality healthcare with our
-                interest-free medical loans. From emergency treatments to planned surgeries, we're here to help.
+                Your right to healthcare shouldn't be compromised by financial constraints. Access Sharia-compliant,
+                interest-free medical financing through our Qard-e-Hasan program. Compassionate care rooted in Islamic
+                values.
               </motion.p>
 
               <motion.div
@@ -189,11 +195,11 @@ const HealthcareLoansPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
-                <motion.a 
-                href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-red-600 to-pink-600 text-white  px-5 py-2 rounded-full font-bold text-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
+                <motion.a
+                  href="https://wa.me/923281969250"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-10 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -202,7 +208,7 @@ const HealthcareLoansPage = () => {
                 </motion.a>
 
                 <motion.button
-                  className="bg-white/80 backdrop-blur-sm border-2 border-red-600 text-red-600 px-5 py-5 rounded-full font-bold text-xl hover:bg-red-50 transition-all duration-300 flex items-center justify-center gap-3"
+                  className="bg-white/80 backdrop-blur-sm border-2 border-green-600 text-green-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-green-50 transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -218,8 +224,8 @@ const HealthcareLoansPage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <img src="https://admin-bg.investkraft.com/public/images/1729157854.why-to-choose-medical-loan-in-health-emergency.webp" alt="Healthcare Loans" className="w-full h-96 object-cover" />
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-green-600">
+                <img src="/akhuwat-healthcare.jpg" alt="Islamic Healthcare Support" className="w-full h-96 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
                 <motion.div
@@ -230,8 +236,8 @@ const HealthcareLoansPage = () => {
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="text-center">
-                    <div className="text-3xl font-black text-red-600 mb-2">₨15L</div>
-                    <div className="text-sm text-gray-600 font-semibold">Maximum Loan</div>
+                    <div className="text-3xl font-black text-green-600 mb-2">₨15L</div>
+                    <div className="text-sm text-gray-600 font-semibold">Maximum Qard</div>
                   </div>
                 </motion.div>
 
@@ -243,12 +249,58 @@ const HealthcareLoansPage = () => {
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="text-center">
-                    <div className="text-3xl font-black text-blue-600 mb-2">24hr</div>
-                    <div className="text-sm text-gray-600 font-semibold">Emergency Approval</div>
+                    <div className="text-3xl font-black text-blue-600 mb-2">0%</div>
+                    <div className="text-sm text-gray-600 font-semibold">Interest-Free</div>
                   </div>
                 </motion.div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Islamic Values Section */}
+      <section className="py-16 bg-green-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-black text-gray-900 mb-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">Islamic Principles</span> of Healthcare
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Our healthcare support is grounded in Islamic teachings about preserving life
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-green-100 text-center">
+              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaQuran className="text-green-600 text-3xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Preservation of Life</h3>
+              <p className="text-gray-600">
+                "Whoever saves a life, it will be as if they saved all of humanity" (Quran 5:32)
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-blue-100 text-center">
+              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaHandsHelping className="text-blue-600 text-3xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Community Responsibility</h3>
+              <p className="text-gray-600">
+                "The believers in their mutual kindness, compassion and sympathy are like one body" (Hadith)
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-amber-100 text-center">
+              <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaMosque className="text-amber-600 text-3xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Mosque-Based Healing</h3>
+              <p className="text-gray-600">
+                "Seek treatment, for Allah has not created a disease without creating a cure" (Hadith)
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -264,13 +316,13 @@ const HealthcareLoansPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-5xl font-black text-gray-900 mb-8">
-              Medical{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-600">
-                Categories
+              Healthcare{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
+                Support Areas
               </span>
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Comprehensive healthcare financing for all types of medical needs
+              Comprehensive medical financing for various healthcare needs in accordance with Islamic principles
             </p>
           </motion.div>
 
@@ -299,7 +351,7 @@ const HealthcareLoansPage = () => {
                   <div className="space-y-2">
                     {category.examples.map((example, i) => (
                       <div key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <FaCheckCircle className="text-emerald-500 text-xs" />
+                        <FaCheckCircle className="text-green-500 text-xs" />
                         <span>{example}</span>
                       </div>
                     ))}
@@ -312,7 +364,7 @@ const HealthcareLoansPage = () => {
       </section>
 
       {/* Partner Hospitals */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-red-50">
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-green-50">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             className="text-center mb-16"
@@ -323,10 +375,10 @@ const HealthcareLoansPage = () => {
           >
             <h2 className="text-5xl font-black text-gray-900 mb-8">
               Partner{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-600">Hospitals</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">Healthcare Providers</span>
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Direct payment arrangements with leading healthcare institutions
+              We collaborate with leading Islamic healthcare institutions across Pakistan
             </p>
           </motion.div>
 
@@ -341,14 +393,14 @@ const HealthcareLoansPage = () => {
               {partnerHospitals.map((hospital, index) => (
                 <motion.div
                   key={index}
-                  className="flex items-center gap-4 bg-gradient-to-r from-red-50 to-pink-50 rounded-2xl p-6 shadow-lg border border-red-100"
+                  className="flex items-center gap-4 bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-6 shadow-lg border border-green-100"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
                   viewport={{ once: true }}
                   whileHover={{ x: 5 }}
                 >
-                  <FaHospital className="text-red-500 text-xl flex-shrink-0" />
+                  <FaHospital className="text-green-500 text-xl flex-shrink-0" />
                   <span className="text-gray-700 font-medium text-sm">{hospital}</span>
                 </motion.div>
               ))}
@@ -356,16 +408,16 @@ const HealthcareLoansPage = () => {
 
             <div className="text-center mt-12">
               <p className="text-lg text-gray-600 mb-6">
-                We work with 200+ healthcare providers across Pakistan for seamless treatment financing
+                We work with 200+ Islamic healthcare providers across Pakistan for seamless treatment financing
               </p>
               <motion.a
-              href="/about"
-                className="bg-gradient-to-r from-red-600 to-pink-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 mx-auto"
+                href="/partners"
+                className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 mx-auto"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaHospital />
-                View All Partners
+                View All Healthcare Partners
               </motion.a>
             </div>
           </motion.div>
@@ -373,7 +425,7 @@ const HealthcareLoansPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-red-600 to-pink-600 text-white relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-r from-green-600 to-blue-600 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-48 translate-x-48"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-white rounded-full translate-y-40 -translate-x-40"></div>
@@ -387,23 +439,23 @@ const HealthcareLoansPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl md:text-6xl font-black mb-8">Your Health is Our Priority</h2>
-            <p className="text-2xl text-red-100 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Don't compromise on healthcare due to financial constraints. Get the medical treatment you need with our
-              interest-free healthcare loans. Apply now for immediate assistance.
+            <h2 className="text-5xl md:text-6xl font-black mb-8">Your Health is Our Islamic Duty</h2>
+            <p className="text-2xl text-green-100 mb-12 max-w-4xl mx-auto leading-relaxed">
+              Don't let financial constraints prevent you from receiving quality healthcare. Our Qard-e-Hasan medical
+              support ensures you get the treatment you need while upholding Islamic values.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-              href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                className="bg-white text-red-600 px-12 py-6 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl flex items-center justify-center gap-3"
+                href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-green-600 px-12 py-6 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaHeartbeat />
-                Apply for Healthcare Loan
+                Apply for Healthcare Support
               </motion.a>
 
               <motion.button
@@ -422,4 +474,4 @@ const HealthcareLoansPage = () => {
   )
 }
 
-export default HealthcareLoansPage
+export default HealthcareSupportPage

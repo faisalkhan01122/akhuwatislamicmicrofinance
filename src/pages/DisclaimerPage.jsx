@@ -1,179 +1,136 @@
+"use client"
 
 import { motion } from "framer-motion"
-import { FaExclamationTriangle, FaShieldAlt, FaInfoCircle, FaPhone, FaEnvelope, FaFileAlt } from "react-icons/fa"
+import { FaScaleBalanced, FaHandshake, FaPhone, FaEnvelope, FaMosque } from "react-icons/fa6"
+import { RiRefund2Fill } from "react-icons/ri"
+import { FaInfoCircle } from "react-icons/fa";
+
+import { FaBookQuran } from "react-icons/fa6";
+
+import { BsShieldCheck } from "react-icons/bs"
 
 const DisclaimerPage = () => {
-  const disclaimerSections = [
+  const islamicDisclaimers = [
     {
-      icon: FaInfoCircle,
-      title: "General Information",
+      icon: FaBookQuran,
+      title: "Sharia Compliance",
       content: [
-        "The information provided on this website is for general informational purposes only and should not be considered as financial, legal, or professional advice.",
-        "While we strive to keep the information accurate and up-to-date, we make no representations or warranties of any kind about the completeness, accuracy, reliability, or availability of the information.",
-        "Any reliance you place on such information is strictly at your own risk.",
-      ],
-      color: "text-blue-600",
-    },
-    {
-      icon: FaShieldAlt,
-      title: "Loan Approval Disclaimer",
-      content: [
-        "Loan approval is subject to our internal credit assessment and eligibility criteria.",
-        "Meeting the minimum requirements does not guarantee loan approval.",
-        "We reserve the right to reject any loan application without providing specific reasons.",
-        "Loan terms, amounts, and conditions may vary based on individual circumstances and risk assessment.",
+        "All financial services provided by Akhuwat strictly adhere to Islamic Sharia principles, free from Riba (interest) and other prohibited elements.",
+        "Our Qard-e-Hasana (benevolent loan) model is approved by our Sharia Advisory Board comprising renowned Islamic scholars.",
+        "While we ensure Sharia compliance in our operations, individual responsibility lies with users to ensure their usage aligns with Islamic principles.",
       ],
       color: "text-emerald-600",
+      ayah: "“Allah has permitted trade and forbidden usury.” (Quran 2:275)"
     },
     {
-      icon: FaExclamationTriangle,
-      title: "Risk Disclosure",
+      icon: FaHandshake,
+      title: "Islamic Financial Responsibility",
       content: [
-        "Borrowing money involves financial risk and responsibility.",
-        "Failure to repay loans may result in legal action and impact your credit history.",
-        "Guarantors are equally responsible for loan repayment in case of borrower default.",
-        "Consider your financial situation carefully before applying for any loan.",
+        "Taking loans is permissible in Islam but should be for genuine needs and with intention of repayment.",
+        "Defaulting on loans without valid reason is considered oppression (Dhulm) in Islam.",
+        "We encourage seeking Islamic financial counseling if uncertain about repayment capacity.",
       ],
-      color: "text-orange-600",
+      color: "text-blue-600",
+      ayah: "“The borrower is a slave until he repays.” (Tirmidhi)"
     },
     {
-      icon: FaFileAlt,
-      title: "Website Content",
+      icon: FaScaleBalanced,
+      title: "Islamic Legal Framework",
       content: [
-        "The content on this website may contain technical inaccuracies or typographical errors.",
-        "We reserve the right to modify, update, or remove content without prior notice.",
-        "Third-party links are provided for convenience and do not constitute endorsement.",
-        "We are not responsible for the content or practices of external websites.",
+        "All agreements are governed by Islamic contract law principles (Aqd in Sharia).",
+        "Disputes are first referred to mosque-based reconciliation committees before legal action.",
+        "We follow Islamic guidelines on debt collection with compassion and dignity.",
+      ],
+      color: "text-amber-600",
+      ayah: "“And fulfill the covenant, for the covenant will be questioned about.” (Quran 17:34)"
+    },
+    {
+      icon: RiRefund2Fill,
+      title: "Repayment Ethics",
+      content: [
+        "Early repayment is considered a virtuous act in Islam and is highly encouraged.",
+        "Those facing genuine hardship should contact us immediately for Islamic solutions.",
+        "Charity (Sadaqah) is accepted for those unable to repay, following Sharia guidelines.",
       ],
       color: "text-purple-600",
+      ayah: "“If the debtor is in difficulty, grant him time till it is easy for him to repay.” (Quran 2:280)"
     },
   ]
 
-  const importantNotices = [
+  const islamicNotices = [
     {
-      title: "Regulatory Compliance",
+      title: "Sharia Oversight",
       description:
-        "Akhuwat Network operates under the supervision of relevant regulatory authorities in Pakistan. All operations comply with applicable laws and Islamic Sharia principles.",
+        "Our operations are supervised by a Board of Islamic Scholars ensuring continuous Sharia compliance. Annual Sharia audits are conducted by independent Islamic finance experts.",
+      icon: BsShieldCheck
     },
     {
-      title: "Data Protection",
+      title: "Islamic Data Ethics",
       description:
-        "Personal information is collected and processed in accordance with our Privacy Policy and applicable data protection laws. We implement appropriate security measures to protect your data.",
+        "We handle personal information according to Islamic principles of confidentiality (Amanah) and only use data for permissible (Halal) purposes as outlined in our Islamic Privacy Charter.",
+      icon: FaMosque
     },
     {
-      title: "Service Availability",
+      title: "Islamic Dispute Resolution",
       description:
-        "While we strive to maintain continuous service availability, we do not guarantee uninterrupted access to our website or services. Maintenance and technical issues may cause temporary disruptions.",
+        "Following the Sunnah, disputes are first mediated through mosque-based reconciliation. Legal action is only pursued after exhausting Islamic mediation processes.",
+      icon: FaHandshake
     },
     {
-      title: "Financial Advice",
+      title: "Islamic Financial Guidance",
       description:
-        "The information provided does not constitute financial advice. We recommend consulting with qualified financial advisors before making important financial decisions.",
+        "Our services include free Islamic financial counseling to help community members make Sharia-compliant financial decisions in line with Quran and Sunnah.",
+      icon: FaBookQuran
     },
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-orange-50">
-      {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-orange-400 rounded-full animate-float blur-3xl"></div>
-          <div className="absolute bottom-32 right-20 w-80 h-80 bg-red-400 rounded-full animate-float-reverse blur-3xl"></div>
-        </div>
-
+    <div className="min-h-screen bg-gradient-to-b from-white to-emerald-50">
+      {/* Islamic Hero Section */}
+      <section className="relative py-24 overflow-hidden bg-[url('/islamic-pattern-bg.png')] bg-cover">
+        <div className="absolute inset-0 bg-emerald-900/90"></div>
+        
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <motion.div
-            className="text-center"
+            className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="flex items-center justify-center gap-4 mb-8"
+              className="flex flex-col items-center justify-center gap-2 mb-8"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-orange-600 to-red-600 rounded-full flex items-center justify-center shadow-2xl">
-                <FaExclamationTriangle className="text-white text-2xl" />
-              </div>
-              <div className="text-left">
-                <span className="text-orange-600 font-bold text-xl block">Akhuwat Network</span>
-                <span className="text-gray-500 text-sm">Important Disclaimers</span>
-              </div>
+              <div className="text-4xl text-emerald-300 mb-2" style={{ fontFamily: 'Traditional Arabic' }}>تنبيهات شرعية</div>
+              <div className="w-20 h-1 bg-amber-400 mb-4"></div>
+              <div className="text-xl text-emerald-200">Akhuwat Islamic Disclaimers</div>
             </motion.div>
 
             <motion.h1
-              className="text-5xl md:text-7xl font-black text-gray-900 mb-8"
-              initial={{ opacity: 0, y: 30 }}
+              className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight"
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">
-                Disclaimer
-              </span>
+              <span className="text-amber-300">Islamic</span> Financial Responsibilities
             </motion.h1>
 
             <motion.p
-              className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
-              initial={{ opacity: 0, y: 30 }}
+              className="text-2xl text-emerald-100 max-w-4xl mx-auto leading-relaxed mb-12"
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              Please read this disclaimer carefully before using our website or services. This disclaimer outlines the
-              limitations of our liability and your responsibilities as a user.
+              "The believer's shade on the Day of Judgment will be his good conduct and fulfillment of trusts" (Ahmad)
             </motion.p>
-
-            <motion.div
-              className="mt-8 text-sm text-gray-500"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-            >
-              Last Updated: January 2024
-            </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* Disclaimer Sections */}
+      {/* Islamic Disclaimer Sections */}
       <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8">
-            {disclaimerSections.map((section, index) => (
-              <motion.div
-                key={index}
-                className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 hover:shadow-2xl transition-all duration-500"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -5 }}
-              >
-                <div className="flex items-center gap-4 mb-6">
-                  <div
-                    className={`w-12 h-12 ${section.color} bg-opacity-10 rounded-full flex items-center justify-center`}
-                  >
-                    <section.icon className={`text-2xl ${section.color}`} />
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900">{section.title}</h2>
-                </div>
-
-                <div className="space-y-4">
-                  {section.content.map((paragraph, pIndex) => (
-                    <p key={pIndex} className="text-gray-700 leading-relaxed">
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Important Notices */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-orange-50">
         <div className="max-w-6xl mx-auto px-4">
           <motion.div
             className="text-center mb-16"
@@ -182,59 +139,116 @@ const DisclaimerPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl font-black text-gray-900 mb-8">
-              Important{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">Notices</span>
+            <div className="text-emerald-600 text-3xl mb-4" style={{ fontFamily: 'Traditional Arabic' }}>الشروط والأحكام</div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Sharia <span className="text-emerald-600">Compliance</span> Disclaimers
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Additional important information you should be aware of when using our services
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              "The conditions most deserving to be fulfilled are those by which intimacy becomes permissible" (Bukhari)
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {importantNotices.map((notice, index) => (
+            {islamicDisclaimers.map((section, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-3xl shadow-xl border border-orange-100 p-8 hover:shadow-2xl transition-all duration-500"
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.2, duration: 0.6 }}
+                className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-8 shadow-lg border border-emerald-100 hover:shadow-xl transition-all duration-500 group"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.6 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.02 }}
+                whileHover={{ y: -5 }}
               >
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{notice.title}</h3>
-                <p className="text-gray-700 leading-relaxed">{notice.description}</p>
+                <div className="flex items-center gap-5 mb-6">
+                  <div className={`w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-700 rounded-xl flex items-center justify-center shadow-md group-hover:rotate-12 transition-transform`}>
+                    <section.icon className="text-white text-2xl" />
+                  </div>
+                  <h2 className="text-2xl font-bold text-gray-900">{section.title}</h2>
+                </div>
+
+                <div className="space-y-4 mb-6">
+                  {section.content.map((paragraph, pIndex) => (
+                    <p key={pIndex} className="text-gray-700 leading-relaxed text-sm">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+
+                <div className="text-sm text-emerald-600 italic border-r-4 border-emerald-200 pr-4">
+                  {section.ayah}
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Legal Notice */}
-      <section className="py-24 bg-gradient-to-r from-red-600 to-orange-600 text-white">
-        <div className="max-w-4xl mx-auto px-4">
+      {/* Islamic Notices */}
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-emerald-50">
+        <div className="max-w-6xl mx-auto px-4">
           <motion.div
-            className="bg-white/10 backdrop-blur-sm rounded-3xl p-12 border border-white/20"
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Important <span className="text-emerald-600">Islamic</span> Notices
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              "The believers in their mutual kindness, compassion and sympathy are just like one body" (Bukhari)
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {islamicNotices.map((notice, index) => (
+              <motion.div
+                key={index}
+                className="bg-white rounded-xl shadow-lg border border-emerald-100 p-8 hover:shadow-xl transition-all duration-500"
+                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.2, duration: 0.6 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.02 }}
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+                    <notice.icon className="text-emerald-600 text-xl" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">{notice.title}</h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed text-sm">{notice.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Islamic Legal Notice */}
+      <section className="py-24 bg-[url('/mosque-bg.jpg')] bg-cover bg-center relative">
+        <div className="absolute inset-0 bg-emerald-900/90"></div>
+        
+        <div className="max-w-4xl mx-auto px-4 relative z-10">
+          <motion.div
+            className="bg-white/10 backdrop-blur-sm rounded-xl p-12 border border-emerald-300/20"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
             <div className="text-center">
-              <FaExclamationTriangle className="text-5xl text-yellow-300 mx-auto mb-6" />
-              <h2 className="text-3xl font-bold mb-6">Legal Notice</h2>
-              <div className="space-y-4 text-lg leading-relaxed">
+              <div className="text-4xl text-amber-300 mb-4" style={{ fontFamily: 'Traditional Arabic' }}>إشعار قانوني إسلامي</div>
+              <h2 className="text-3xl font-bold text-white mb-6">Islamic Legal Notice</h2>
+              <div className="space-y-4 text-lg leading-relaxed text-emerald-100">
                 <p>
-                  This disclaimer is governed by the laws of Pakistan. By using our website and services, you agree to
-                  the terms outlined in this disclaimer.
+                  This agreement is governed by Islamic contract law (Fiqh al-Mu'amalat) and the laws of Pakistan where not in conflict with Sharia.
                 </p>
                 <p>
-                  If any part of this disclaimer is found to be unenforceable, the remaining provisions will continue to
-                  be valid and enforceable.
+                  Any disputes shall first be referred to our Sharia Arbitration Council before pursuing legal remedies.
                 </p>
                 <p>
-                  We reserve the right to modify this disclaimer at any time. Changes will be effective immediately upon
-                  posting on our website.
+                  We reserve the right to modify terms in accordance with evolving Islamic finance standards, with notice given through mosque announcements.
                 </p>
               </div>
             </div>
@@ -242,7 +256,7 @@ const DisclaimerPage = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Islamic Contact Section */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div
@@ -252,32 +266,52 @@ const DisclaimerPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-8">Questions or Concerns?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-8">Sharia Questions?</h2>
             <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-              If you have any questions about this disclaimer or need clarification on any point, please contact us. We
-              are here to help and provide the information you need.
+              "The seeking of knowledge is obligatory for every Muslim" (Ibn Majah). Contact our Islamic scholars for guidance on Sharia compliance.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <motion.button
-                className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
+              <motion.a
+                href="tel:+92300111254882"
+                className="bg-emerald-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-emerald-700 transition-all duration-300 shadow-xl flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaPhone />
-                Call: +92 328 1969250
-              </motion.button>
+                Call Sharia Helpdesk
+              </motion.a>
 
-              <motion.button
-                className="bg-white border-2 border-orange-600 text-orange-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-orange-50 transition-all duration-300 flex items-center justify-center gap-3"
+              <motion.a
+                href="mailto:sharia@akhuwat.org.pk"
+                className="bg-white border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-lg font-bold hover:bg-emerald-50 transition-all duration-300 flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaEnvelope />
-                Email: legal@akhuwat.org.pk
-              </motion.button>
+                Email Islamic Scholars
+              </motion.a>
+            </div>
+
+            <div className="mt-12 pt-8 border-t border-emerald-200">
+              <h3 className="text-lg text-emerald-600 mb-4">Mosque Consultation Hours</h3>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Visit your local mosque after Asr prayers to speak with our Islamic finance counselors about Sharia compliance.
+              </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Quranic Closing */}
+      <section className="py-16 bg-gradient-to-r from-emerald-800 to-teal-900 text-center">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-white text-4xl mb-6" style={{ fontFamily: 'Traditional Arabic' }}>
+            وَتَعَاوَنُوا۟ عَلَى ٱلْبِرِّ وَٱلتَّقْوَىٰ ۖ وَلَا تَعَاوَنُوا۟ عَلَى ٱلْإِثْمِ وَٱلْعُدْوَٰنِ
+          </div>
+          <p className="text-xl text-emerald-200 mb-8">
+            "And cooperate in righteousness and piety, but do not cooperate in sin and aggression" (Quran 5:2)
+          </p>
         </div>
       </section>
     </div>

@@ -15,6 +15,9 @@ import {
   FaShoppingCart,
   FaCheckCircle,
   FaCalculator,
+  FaMosque,
+  FaHandsHelping,
+  FaQuran,
 } from "react-icons/fa"
 
 const MicrofinanceLoansPage = () => {
@@ -23,28 +26,28 @@ const MicrofinanceLoansPage = () => {
 
   const loanFeatures = [
     {
-      icon: FaMoneyBillWave,
-      title: "₨50K to ₨5 Lacs",
-      description: "Flexible loan amounts for small businesses and personal needs",
-      color: "text-emerald-600",
+      icon: FaQuran,
+      title: "Interest-Free",
+      description: "Sharia-compliant Qard-e-Hasan loans with zero interest",
+      color: "text-green-600",
     },
     {
-      icon: FaFemale,
-      title: "Women-Focused",
-      description: "Special programs for women entrepreneurs and homemakers",
-      color: "text-pink-600",
-    },
-    {
-      icon: FaUsers,
-      title: "Group Lending",
-      description: "Community-based lending approach with peer support",
+      icon: FaMosque,
+      title: "Islamic Values",
+      description: "Ethical financing based on Islamic principles of brotherhood",
       color: "text-blue-600",
     },
     {
+      icon: FaHandsHelping,
+      title: "Community Support",
+      description: "Group-based lending with social responsibility",
+      color: "text-emerald-600",
+    },
+    {
       icon: FaLightbulb,
-      title: "Skill Development",
-      description: "Training and mentorship programs included",
-      color: "text-purple-600",
+      title: "Capacity Building",
+      description: "Training programs for sustainable livelihoods",
+      color: "text-amber-600",
     },
   ]
 
@@ -52,51 +55,54 @@ const MicrofinanceLoansPage = () => {
     {
       icon: FaShoppingCart,
       title: "Small Business",
-      description: "Start or expand your small business venture",
-      examples: ["Street Vending", "Home-based Business", "Handicrafts", "Food Stalls"],
+      description: "Start or expand your halal business venture",
+      examples: ["Retail Shop", "Home-based Business", "Agriculture", "Food Business"],
       color: "from-blue-500 to-indigo-600",
     },
     {
       icon: FaHome,
-      title: "Home Improvement",
-      description: "Improve your living conditions and home infrastructure",
-      examples: ["Bathroom Construction", "Kitchen Renovation", "Roof Repair", "Water Connection"],
-      color: "from-emerald-500 to-teal-600",
+      title: "Housing Needs",
+      description: "Improve your family's living conditions",
+      examples: ["Home Renovation", "Bathroom Construction", "Roof Repair", "Utilities"],
+      color: "from-green-500 to-emerald-600",
     },
     {
       icon: FaGraduationCap,
       title: "Education",
-      description: "Invest in education for yourself or your children",
-      examples: ["School Fees", "Vocational Training", "Computer Courses", "Skill Development"],
+      description: "Invest in Islamic and secular education",
+      examples: ["School Fees", "Vocational Training", "Islamic Studies", "Books"],
       color: "from-purple-500 to-pink-600",
     },
     {
       icon: FaHandHoldingHeart,
-      title: "Emergency Needs",
-      description: "Address urgent financial requirements",
-      examples: ["Medical Expenses", "Family Events", "Debt Consolidation", "Urgent Repairs"],
-      color: "from-orange-500 to-red-600",
+      title: "Social Needs",
+      description: "Support for essential family requirements",
+      examples: ["Medical Expenses", "Marriage Support", "Debt Relief", "Essential Items"],
+      color: "from-amber-500 to-orange-600",
     },
   ]
 
-  const womenPrograms = [
+  const specialPrograms = [
     {
-      title: "Women Entrepreneur Program",
-      description: "Special support for women starting their own businesses",
-      benefits: ["Lower loan requirements", "Flexible repayment", "Business training", "Mentorship support"],
+      title: "Women Empowerment",
+      description: "Special programs for women entrepreneurs and homemakers",
+      benefits: ["Lower loan requirements", "Female-only centers", "Business training", "Mentorship"],
       loanRange: "₨25K - ₨3L",
+      icon: FaFemale
     },
     {
-      title: "Homemaker Support",
-      description: "Financial assistance for home-based income generation",
-      benefits: ["Home-based business loans", "Skill development", "Market linkage", "Family support"],
-      loanRange: "₨15K - ₨2L",
+      title: "Rural Development",
+      description: "Support for agricultural and village-based livelihoods",
+      benefits: ["Farm equipment loans", "Livestock financing", "Irrigation support", "Market access"],
+      loanRange: "₨50K - ₨5L",
+      icon: FaHome
     },
     {
-      title: "Education Support",
-      description: "Educational loans for women and their children",
-      benefits: ["Education fee support", "Vocational training", "Computer literacy", "Career guidance"],
-      loanRange: "₨10K - ₨1.5L",
+      title: "Youth Entrepreneurship",
+      description: "Opportunities for young Muslim entrepreneurs",
+      benefits: ["Startup support", "Skill development", "Mentorship", "Networking"],
+      loanRange: "₨30K - ₨4L",
+      icon: FaUsers
     },
   ]
 
@@ -105,12 +111,12 @@ const MicrofinanceLoansPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-50">
+    <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-green-50">
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-24 overflow-hidden bg-[url('/islamic-pattern.jpg')] bg-opacity-5">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-emerald-400 rounded-full animate-float blur-3xl"></div>
-          <div className="absolute bottom-32 right-20 w-80 h-80 bg-pink-400 rounded-full animate-float-reverse blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-green-400 rounded-full animate-float blur-3xl"></div>
+          <div className="absolute bottom-32 right-20 w-80 h-80 bg-blue-400 rounded-full animate-float-reverse blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -122,12 +128,12 @@ const MicrofinanceLoansPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full flex items-center justify-center shadow-2xl">
-                  <FaUsers className="text-white text-2xl" />
+                <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center shadow-2xl">
+                  <FaMosque className="text-white text-2xl" />
                 </div>
                 <div>
-                  <span className="text-emerald-600 font-bold text-xl block">Akhuwat Network</span>
-                  <span className="text-gray-500 text-sm">Microfinance Solutions</span>
+                  <span className="text-green-600 font-bold text-xl block">Akhuwat Islamic Microfinance</span>
+                  <span className="text-gray-600 text-sm">Qard-e-Hasan based solutions</span>
                 </div>
               </motion.div>
 
@@ -137,9 +143,9 @@ const MicrofinanceLoansPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
-                Microfinance{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
-                  Loans
+                Islamic{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
+                  Microfinance
                 </span>
               </motion.h1>
 
@@ -149,8 +155,7 @@ const MicrofinanceLoansPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
               >
-                Empowering small entrepreneurs and women with accessible microfinance solutions. Small loans that create
-                massive impacts in communities across Pakistan.
+                Interest-free loans following Islamic principles to empower communities. Providing ethical financial solutions to uplift the underprivileged across Pakistan.
               </motion.p>
 
               <motion.div
@@ -180,10 +185,10 @@ const MicrofinanceLoansPage = () => {
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
                 <motion.a 
-                href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-10 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
+                  href="https://wa.me/923281969250"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-10 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -192,7 +197,7 @@ const MicrofinanceLoansPage = () => {
                 </motion.a>
 
                 <motion.button
-                  className="bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-emerald-50 transition-all duration-300 flex items-center justify-center gap-3"
+                  className="bg-white/80 backdrop-blur-sm border-2 border-green-600 text-green-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-green-50 transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -208,8 +213,8 @@ const MicrofinanceLoansPage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <img src="/micr.jpg" alt="Microfinance Loans" className="w-full h-96 object-cover" />
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-green-600">
+                <img src="/akhuwat-microfinance.jpg" alt="Akhuwat Microfinance" className="w-full h-96 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
                 <motion.div
@@ -220,8 +225,8 @@ const MicrofinanceLoansPage = () => {
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="text-center">
-                    <div className="text-3xl font-black text-emerald-600 mb-2">₨5L</div>
-                    <div className="text-sm text-gray-600 font-semibold">Maximum Loan</div>
+                    <div className="text-3xl font-black text-green-600 mb-2">₨5L</div>
+                    <div className="text-sm text-gray-600 font-semibold">Maximum Qard-e-Hasan</div>
                   </div>
                 </motion.div>
 
@@ -233,12 +238,58 @@ const MicrofinanceLoansPage = () => {
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="text-center">
-                    <div className="text-3xl font-black text-pink-600 mb-2">70%</div>
-                    <div className="text-sm text-gray-600 font-semibold">Women Borrowers</div>
+                    <div className="text-3xl font-black text-blue-600 mb-2">0%</div>
+                    <div className="text-sm text-gray-600 font-semibold">Interest-Free</div>
                   </div>
                 </motion.div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Islamic Values Section */}
+      <section className="py-16 bg-green-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-black text-gray-900 mb-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">Islamic Principles</span> Behind Our Model
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Akhuwat operates on the Islamic concept of Qard-e-Hasan (benevolent loan) following Quranic injunctions
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-green-100 text-center">
+              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaQuran className="text-green-600 text-3xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Quranic Foundation</h3>
+              <p className="text-gray-600">
+                "Who is it that would loan Allah a goodly loan so He may multiply it for him many times over?" (2:245)
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-blue-100 text-center">
+              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaHandsHelping className="text-blue-600 text-3xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Brotherhood</h3>
+              <p className="text-gray-600">
+                "The believers are but brothers" (49:10) - We treat all applicants as family in need
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-amber-100 text-center">
+              <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaMosque className="text-amber-600 text-3xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Mosque-Based</h3>
+              <p className="text-gray-600">
+                Loans are disbursed in mosques to maintain transparency and community involvement
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -254,24 +305,27 @@ const MicrofinanceLoansPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-5xl font-black text-gray-900 mb-8">
-              Microfinance{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
+              Qard-e-Hasan{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
                 Calculator
               </span>
             </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Calculate your interest-free loan repayment schedule
+            </p>
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
-              className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl p-12"
+              className="bg-gradient-to-br from-green-50 to-blue-50 rounded-3xl p-12 border border-green-200"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
               <div className="flex items-center gap-4 mb-8">
-                <FaCalculator className="text-3xl text-emerald-600" />
-                <h3 className="text-3xl font-bold text-gray-900">Calculate Your Loan</h3>
+                <FaCalculator className="text-3xl text-green-600" />
+                <h3 className="text-3xl font-bold text-gray-900">Calculate Your Qard</h3>
               </div>
 
               <div className="space-y-8">
@@ -295,7 +349,7 @@ const MicrofinanceLoansPage = () => {
                 </div>
 
                 <div>
-                  <label className="block text-lg font-semibold text-gray-700 mb-4">Loan Term: {loanTerm} months</label>
+                  <label className="block text-lg font-semibold text-gray-700 mb-4">Repayment Term: {loanTerm} months</label>
                   <input
                     type="range"
                     min="6"
@@ -320,39 +374,39 @@ const MicrofinanceLoansPage = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-3xl font-bold text-gray-900 mb-8">Loan Summary</h3>
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">Repayment Summary</h3>
 
               <div className="space-y-6">
                 <div className="flex justify-between items-center p-4 bg-gray-50 rounded-2xl">
                   <span className="text-lg font-semibold text-gray-700">Loan Amount</span>
-                  <span className="text-2xl font-bold text-emerald-600">₨{loanAmount.toLocaleString()}</span>
+                  <span className="text-2xl font-bold text-green-600">₨{loanAmount.toLocaleString()}</span>
                 </div>
 
                 <div className="flex justify-between items-center p-4 bg-gray-50 rounded-2xl">
-                  <span className="text-lg font-semibold text-gray-700">Interest Rate</span>
-                  <span className="text-2xl font-bold text-emerald-600">0%</span>
+                  <span className="text-lg font-semibold text-gray-700">Profit Rate</span>
+                  <span className="text-2xl font-bold text-green-600">0%</span>
                 </div>
 
                 <div className="flex justify-between items-center p-4 bg-gray-50 rounded-2xl">
-                  <span className="text-lg font-semibold text-gray-700">Loan Term</span>
-                  <span className="text-2xl font-bold text-purple-600">{loanTerm} months</span>
+                  <span className="text-lg font-semibold text-gray-700">Repayment Term</span>
+                  <span className="text-2xl font-bold text-blue-600">{loanTerm} months</span>
                 </div>
 
-                <div className="flex justify-between items-center p-6 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl text-white">
+                <div className="flex justify-between items-center p-6 bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl text-white">
                   <span className="text-lg font-semibold">Monthly Payment</span>
                   <span className="text-3xl font-black">₨{calculateMonthlyPayment().toLocaleString()}</span>
                 </div>
 
                 <div className="text-center pt-6">
                   <motion.a 
-                  href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 mx-auto"
+                    href="https://wa.me/923281969250"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 mx-auto"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    Apply for This Loan
+                    Apply for Qard-e-Hasan
                     <FaArrowRight />
                   </motion.a>
                 </div>
@@ -363,7 +417,7 @@ const MicrofinanceLoansPage = () => {
       </section>
 
       {/* Loan Purposes */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-emerald-50">
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-green-50">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             className="text-center mb-20"
@@ -373,13 +427,13 @@ const MicrofinanceLoansPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-5xl font-black text-gray-900 mb-8">
-              Loan{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
+              Halal{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
                 Purposes
               </span>
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Flexible microfinance solutions for various personal and business needs
+              Sharia-compliant financing solutions for various personal and business needs
             </p>
           </motion.div>
 
@@ -404,7 +458,7 @@ const MicrofinanceLoansPage = () => {
                   <div className="space-y-2">
                     {purpose.examples.map((example, i) => (
                       <div key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <FaCheckCircle className="text-emerald-500 text-xs" />
+                        <FaCheckCircle className="text-green-500 text-xs" />
                         <span>{example}</span>
                       </div>
                     ))}
@@ -416,7 +470,7 @@ const MicrofinanceLoansPage = () => {
         </div>
       </section>
 
-      {/* Women Programs */}
+      {/* Special Programs */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
@@ -427,24 +481,24 @@ const MicrofinanceLoansPage = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center justify-center gap-4 mb-8">
-              <FaFemale className="text-5xl text-pink-600" />
+              <FaHandsHelping className="text-5xl text-blue-600" />
               <div>
                 <h2 className="text-5xl font-black text-gray-900">
-                  Women{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-rose-600">
-                    Empowerment
+                  Our{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
+                    Special Programs
                   </span>
                 </h2>
-                <p className="text-lg text-gray-600">Special programs designed for women</p>
+                <p className="text-lg text-gray-600">Targeted initiatives for specific community needs</p>
               </div>
             </div>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {womenPrograms.map((program, index) => (
+            {specialPrograms.map((program, index) => (
               <motion.div
                 key={index}
-                className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-3xl p-8 shadow-xl border border-pink-100 hover:shadow-2xl transition-all duration-500"
+                className="bg-gradient-to-br from-green-50 to-blue-50 rounded-3xl p-8 shadow-xl border border-green-100 hover:shadow-2xl transition-all duration-500"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2, duration: 0.6 }}
@@ -452,12 +506,12 @@ const MicrofinanceLoansPage = () => {
                 whileHover={{ y: -10 }}
               >
                 <div className="text-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-pink-600 to-rose-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <FaFemale className="text-white text-2xl" />
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <program.icon className="text-white text-2xl" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{program.title}</h3>
                   <p className="text-gray-600">{program.description}</p>
-                  <div className="inline-flex items-center gap-2 bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-semibold mt-4">
+                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mt-4">
                     <FaMoneyBillWave className="text-xs" />
                     {program.loanRange}
                   </div>
@@ -466,7 +520,7 @@ const MicrofinanceLoansPage = () => {
                 <div className="space-y-3">
                   {program.benefits.map((benefit, i) => (
                     <div key={i} className="flex items-center gap-3">
-                      <FaCheckCircle className="text-pink-500 text-sm flex-shrink-0" />
+                      <FaCheckCircle className="text-green-500 text-sm flex-shrink-0" />
                       <span className="text-gray-700 text-sm">{benefit}</span>
                     </div>
                   ))}
@@ -478,7 +532,7 @@ const MicrofinanceLoansPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-emerald-600 to-teal-600 text-white relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-r from-green-600 to-blue-600 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-48 translate-x-48"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-white rounded-full translate-y-40 -translate-x-40"></div>
@@ -492,23 +546,23 @@ const MicrofinanceLoansPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl md:text-6xl font-black mb-8">Start Your Journey Today</h2>
-            <p className="text-2xl text-emerald-100 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Join thousands of entrepreneurs and families who have transformed their lives with our microfinance
-              solutions. Small loans, big dreams, lasting impact.
+            <h2 className="text-5xl md:text-6xl font-black mb-8">Begin Your Ethical Financial Journey</h2>
+            <p className="text-2xl text-green-100 mb-12 max-w-4xl mx-auto leading-relaxed">
+              Join over 5 million Pakistanis who have transformed their lives through our interest-free Islamic microfinance model. 
+              Small loans, big dreams, lasting impact - all in accordance with Islamic principles.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-              href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                className="bg-white text-emerald-600 px-12 py-6 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl flex items-center justify-center gap-3"
+                href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-green-600 px-12 py-6 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <FaUsers />
-                Apply for Microfinance
+                <FaMosque />
+                Apply for Qard-e-Hasan
               </motion.a>
 
               <motion.button

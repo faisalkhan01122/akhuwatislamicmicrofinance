@@ -1,95 +1,99 @@
-
+"use client"
 import { motion } from "framer-motion"
 import HeroImgSection from "../components/HeroImgSection"
-
-import {
-  FaBuilding,
-  FaHome,
-  FaUser,
-  FaGraduationCap,
-  FaMedkit,
-  FaUsers,
-  FaHandHoldingHeart ,
-  FaArrowRight,
-  FaCheckCircle,
-  FaClock,
-  FaShieldAlt,
-} from "react-icons/fa"
-import ModernCard from "../components/ModernCard"
+import { FaMosque, FaHandHoldingHeart, FaUniversity, FaHome, FaUser, FaClinicMedical, FaArrowRight } from "react-icons/fa"
+import { RiRefund2Fill } from "react-icons/ri"
+import { BsFillCalendar2CheckFill } from "react-icons/bs"
+import { FaBookQuran } from "react-icons/fa6";
 
 const ServicesPage = () => {
-  const services = [
+  const islamicServices = [
     {
-      title: "Business Loans",
-      description:
-        "Start or expand your business with our Sharia-compliant financing. From small shops to large enterprises, we support entrepreneurial dreams with flexible terms.",
-      image: "/businessloanbanner.jpg",
-      icon: FaBuilding,
-      color: "from-blue-500 to-blue-600",
-      features: ["Up to ₨25 Lacs", "No Collateral Required", "Quick 7-Day Approval", "Business Mentoring Support"],
-      badge: "Most Popular",
-      href: "/loan-services#business",
+      title: "Qard-e-Hasana for Business",
+      description: "Interest-free capital for halal business ventures following Islamic finance principles. Support for entrepreneurs to establish or expand their trade.",
+      image: "/islamic-business.jpg",
+      icon: FaMosque,
+      color: "from-emerald-600 to-teal-700",
+      features: ["Sharia-compliant financing", "Up to ₨25 Lacs", "No Riba involved", "Business mentoring"],
+      ayah: "“Allah has permitted trade and forbidden usury” (Quran 2:275)",
+      href: "/islamic-finance#business"
     },
     {
-      title: "Housing Loans",
-      description:
-        "Build your dream home with our interest-free housing finance. Whether buying, building, or renovating, we make homeownership accessible.",
-      image: "/hmloan.jpg",
+      title: "Islamic Housing Solutions",
+      description: "Halal financing for home construction, purchase or renovation. Our mosque-based committees ensure Sharia compliance at every step.",
+      image: "/islamic-housing.jpg",
       icon: FaHome,
-      color: "from-green-500 to-green-600",
-      features: ["Up to ₨50 Lacs", "Long-term Repayment", "Construction Support", "Legal Assistance"],
-      href: "/loan-services#housing",
+      color: "from-amber-600 to-orange-600",
+      features: ["Interest-free loans", "Family home support", "Islamic contract", "Community guarantee"],
+      ayah: "“And Allah has made for you your homes as places of rest” (Quran 16:80)",
+      href: "/islamic-finance#housing"
     },
     {
-      title: "Personal Loans",
-      description:
-        "Meet your personal financial needs with dignity. From medical emergencies to family events, our loans provide immediate relief.",
-      image: "/Personal-Loans.webp",
+      title: "Education Through Sadaqah",
+      description: "Support for students seeking Islamic and modern education. Our system follows the Prophetic tradition of spreading knowledge.",
+      image: "/islamic-education.jpg",
+      icon: FaBookQuran,
+      color: "from-blue-600 to-indigo-700",
+      features: ["Full tuition coverage", "Books & materials", "Islamic studies support", "Merit-based assistance"],
+      ayah: "“Allah will raise those who have believed among you and those who were given knowledge” (Quran 58:11)",
+      href: "/islamic-finance#education"
+    },
+    {
+      title: "Islamic Family Support",
+      description: "Financial assistance for family needs following Islamic principles of charity and brotherhood.",
+      image: "/islamic-family.jpg",
       icon: FaUser,
-      color: "from-purple-500 to-purple-600",
-      features: ["Up to ₨10 Lacs", "Emergency Support", "Fast Disbursement", "Flexible Terms"],
-      href: "/loan-services#personal",
+      color: "from-purple-600 to-violet-700",
+      features: ["Marriage support", "Emergency funds", "Islamic counseling", "Community assistance"],
+      ayah: "“The believers are but brothers” (Quran 49:10)",
+      href: "/islamic-finance#family"
     },
     {
-      title: "Education Loans",
-      description:
-        "Invest in your future with our education financing. From school fees to university expenses, we ensure education is accessible.",
-      image: "/What-is-Education-Loan-1-1.png",
-      icon: FaGraduationCap,
-      color: "from-indigo-500 to-indigo-600",
-      features: ["Full Fee Coverage", "Books & Materials", "Living Expenses", "Merit-based Support"],
-      href: "/loan-services#education",
+      title: "Healthcare with Compassion",
+      description: "Medical assistance following the Islamic duty of relieving suffering. Our hospital partnerships ensure halal treatment options.",
+      image: "/islamic-healthcare.jpg",
+      icon: FaClinicMedical,
+      color: "from-red-600 to-pink-700",
+      features: ["Emergency treatment", "Surgical support", "Islamic medical ethics", "Family coverage"],
+      ayah: "“And whoever saves a life, it is as though he had saved all mankind” (Quran 5:32)",
+      href: "/islamic-finance#healthcare"
     },
     {
-      title: "Microfinance Loans",
-      description:
-        "Empower small entrepreneurs and women with our microfinance solutions. Small loans that create big impacts in communities.",
-      image: "/micr.jpg",
-      icon: FaUsers,
-      color: "from-orange-500 to-orange-600",
-      features: ["₨50K to ₨5 Lacs", "Women Focused", "Group Lending", "Skill Development"],
-      href: "/loan-services#microfinance",
-    },
-    {
-      title: "Healthcare Loans",
-      description:
-        "Access quality healthcare without financial stress. Our medical loans cover treatments, surgeries, and ongoing healthcare needs.",
-      image: "/Sharing-a-Home-Loan-Yes-or-No-to-a-Joint-Home-Loan.jpg",
-      icon: FaMedkit,
-      color: "from-red-500 to-red-600",
-      features: ["Medical Emergencies", "Surgery Support", "Treatment Plans", "Family Coverage"],
-      href: "/loan-services#healthcare",
-    },
+      title: "Islamic Microfinance",
+      description: "Small-scale halal financing for micro-entrepreneurs, especially women, following the Sunnah of supporting small traders.",
+      image: "/islamic-microfinance.jpg",
+      icon: FaHandHoldingHeart,
+      color: "from-cyan-600 to-blue-700",
+      features: ["Group lending", "Women empowerment", "Skill development", "Community growth"],
+      ayah: "“The best charity is that given when you are self-sufficient” (Hadith)",
+      href: "/islamic-finance#microfinance"
+    }
   ]
 
   return (
     <>
-      <HeroImgSection imageUrl="/loan.webp" text="Akhuwat Network Services" />
+      <HeroImgSection 
+        imageUrl="/islamic-finance-hero.jpg" 
+        text="Islamic Financial Services"
+        subtext="Qard-e-Hasana According to Sharia Principles"
+      />
 
-      {/* Services Overview */}
-      <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-emerald-50">
+      {/* Quranic Introduction */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <div className="text-emerald-600 text-4xl mb-4" style={{ fontFamily: 'Traditional Arabic' }}>بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <span className="text-emerald-600">Islamic</span> Financial Solutions
+          </h2>
+          <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+            "The parable of those who spend their wealth in the Way of Allah is that of a grain of corn that sprouts seven ears, and in every ear there are a hundred grains." (Quran 2:261)
+          </p>
+        </div>
+      </section>
+
+      {/* Islamic Services */}
+      <section className="py-20 bg-gradient-to-br from-emerald-50 to-white">
         <div className="max-w-7xl mx-auto px-4">
-          {/* Header */}
           <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -97,133 +101,152 @@ const ServicesPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <motion.div
-              className="flex items-center justify-center gap-3 mb-6"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <div className="w-12 h-12 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full flex items-center justify-center">
-                <FaHandHoldingHeart  className="text-white text-xl" />
-              </div>
-              <span className="text-emerald-600 font-bold text-lg">Akhuwat Network Services</span>
-            </motion.div>
-
-            <motion.h2
-              className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              Comprehensive{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
-                Financial Solutions
-              </span>
-            </motion.h2>
-
-            <motion.p
-              className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              Discover our range of Sharia-compliant, interest-free financial services designed to empower individuals,
-              families, and businesses across Pakistan.
-            </motion.p>
+            <div className="text-emerald-600 text-3xl mb-4" style={{ fontFamily: 'Traditional Arabic' }}>خدماتنا الإسلامية</div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Our <span className="text-emerald-600">Sharia-Compliant</span> Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              "Who is it that would loan Allah a goodly loan so He may multiply it for him many times over?" (Quran 2:245)
+            </p>
           </motion.div>
 
-          {/* Services Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {services.map((service, index) => (
-              <ModernCard
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {islamicServices.map((service, index) => (
+              <motion.div
                 key={index}
-                title={service.title}
-                description={service.description}
-                image={service.image}
-                icon={service.icon}
-                color={service.color}
-                features={service.features}
-                badge={service.badge}
-                href={service.href}
-                cta="Learn More"
-              />
-            ))}
-          </div>
-
-          {/* Key Benefits */}
-          <motion.div
-            className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <div className="relative z-10">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                  <h3 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Akhuwat Network?</h3>
-                  <div className="space-y-4">
-                    {[
-                      {
-                        icon: FaShieldAlt,
-                        title: "100% Sharia Compliant",
-                        desc: "All services follow Islamic principles",
-                      },
-                      { icon: FaClock, title: "Quick Processing", desc: "Fast approval within 7 working days" },
-                      { icon: FaCheckCircle, title: "No Hidden Charges", desc: "Transparent and honest pricing" },
-                      { icon: FaUsers, title: "Community Support", desc: "Building stronger communities together" },
-                    ].map((benefit, index) => (
-                      <motion.div
-                        key={index}
-                        className="flex items-center gap-4"
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.4 + index * 0.1, duration: 0.6 }}
-                        viewport={{ once: true }}
-                      >
-                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                          <benefit.icon className="text-xl" />
-                        </div>
-                        <div>
-                          <h4 className="font-bold text-lg">{benefit.title}</h4>
-                          <p className="text-emerald-100">{benefit.desc}</p>
-                        </div>
-                      </motion.div>
+                className="bg-white rounded-xl shadow-lg border border-emerald-100 hover:shadow-xl transition-all"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.6 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -10 }}
+              >
+                <div className="relative h-48 overflow-hidden rounded-t-xl">
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+                  <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-30`}></div>
+                </div>
+                
+                <div className="p-6">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className={`w-12 h-12 bg-gradient-to-r ${service.color} rounded-lg flex items-center justify-center text-white`}>
+                      <service.icon className="text-xl" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
+                  </div>
+                  
+                  <p className="text-gray-700 mb-6">{service.description}</p>
+                  
+                  <div className="mb-6">
+                    {service.features.map((feature, i) => (
+                      <div key={i} className="flex items-start gap-2 mb-2">
+                        <div className="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm text-gray-700">{feature}</span>
+                      </div>
                     ))}
                   </div>
-                </div>
-
-                <div className="text-center">
-                  <motion.div
-                    className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-6"
+                  
+                  <div className="text-sm text-emerald-600 italic border-r-4 border-emerald-200 pr-4 mb-6">
+                    {service.ayah}
+                  </div>
+                  
+                  <motion.a
+                    href={service.href}
+                    className={`inline-block bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-all flex items-center gap-2`}
                     whileHover={{ scale: 1.05 }}
                   >
-                    <h4 className="text-2xl font-bold mb-4">Ready to Get Started?</h4>
-                    <p className="text-emerald-100 mb-6">Join 4+ million beneficiaries who trust Akhuwat Network</p>
-                    <motion.a
-                      href="/loan-services"
-                      className="inline-flex items-center gap-3 bg-white text-emerald-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-emerald-50 transition-all duration-300"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      Apply Now
-                      <FaArrowRight />
-                    </motion.a>
-                  </motion.div>
+                    Learn Islamic Details
+                    <FaArrowRight className="text-xs" />
+                  </motion.a>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                  <div className="text-center">
-                    <p className="text-emerald-200 mb-2">Need Help? Call Us</p>
-                    <a href="tel:+923281969250" className="text-2xl font-bold hover:text-emerald-200 transition-colors">
-                      📞 +92 328 1969250
-                    </a>
-                  </div>
+      {/* Islamic Benefits */}
+      <section className="py-20 bg-[url('/islamic-pattern-bg.png')] bg-cover relative">
+        <div className="absolute inset-0 bg-emerald-900/90"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="text-amber-300 text-3xl mb-4" style={{ fontFamily: 'Traditional Arabic' }}>مزايا أخوات</div>
+              <h2 className="text-4xl font-bold text-white mb-6">Why Choose Akhuwat's Islamic Services?</h2>
+              
+              <div className="space-y-6">
+                {[
+                  {
+                    icon: FaBookQuran,
+                    title: "100% Sharia Approved",
+                    description: "All services reviewed by our Board of Islamic Scholars"
+                  },
+                  {
+                    icon: FaMosque,
+                    title: "Mosque-Based System",
+                    description: "Community support through local mosques"
+                  },
+                  {
+                    icon: RiRefund2Fill,
+                    title: "Early Repayment Encouraged",
+                    description: "Considered virtuous in Islamic finance"
+                  },
+                  {
+                    icon: BsFillCalendar2CheckFill,
+                    title: "Simple Application",
+                    description: "Following Islamic principles of ease"
+                  }
+                ].map((benefit, index) => (
+                  <motion.div
+                    key={index}
+                    className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-emerald-300/20"
+                    initial={{ opacity: 0, x: -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1, duration: 0.6 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center mt-1">
+                      <benefit.icon className="text-xl text-amber-300" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-2">{benefit.title}</h3>
+                      <p className="text-emerald-200">{benefit.description}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-emerald-300/20 text-center">
+              <h3 className="text-2xl font-bold text-white mb-6">Begin Your Islamic Finance Journey</h3>
+              <p className="text-emerald-200 mb-8">"If anyone relieves a Muslim of his worldly distress, Allah will relieve him of his distress on the Day of Resurrection" (Muslim)</p>
+              
+              <div className="space-y-4">
+                <motion.a
+                  href="/apply"
+                  className="block bg-amber-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-amber-600 transition-all"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  Apply for Qard-e-Hasana
+                </motion.a>
+                
+                <motion.a
+                  href="/visit-mosque"
+                  className="block bg-white/10 border border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  Visit Your Local Mosque
+                </motion.a>
+                
+                <div className="pt-6 border-t border-emerald-300/20 mt-6">
+                  <p className="text-emerald-200 mb-2">Islamic Helpdesk</p>
+                  <a href="tel:+92300111254882" className="text-2xl font-bold text-white hover:text-amber-300">
+                    +92 300 111 AKHUWAT
+                  </a>
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

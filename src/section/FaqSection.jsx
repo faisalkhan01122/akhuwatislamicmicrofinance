@@ -5,111 +5,124 @@ import { motion, AnimatePresence } from "framer-motion"
 import {
   FaQuestionCircle,
   FaChevronDown,
-  FaLightbulb,
-  FaHandsHelping,
-  FaShieldAlt,
-  FaMoneyBillWave,
+  FaHandHoldingUsd,
   FaClock,
-  FaUsers,
+  FaUserTie,
+  FaHandshake,
+  FaUniversity,
+  FaHospital,
+  FaHome,
+  FaGraduationCap,
 } from "react-icons/fa"
+import { FaBookQuran } from "react-icons/fa6";
 
 const faqCategories = [
   { id: "general", label: "General", icon: FaQuestionCircle },
-  { id: "loans", label: "Loans", icon: FaMoneyBillWave },
-  { id: "process", label: "Process", icon: FaClock },
-  { id: "eligibility", label: "Eligibility", icon: FaUsers },
+  { id: "qard-e-hasna", label: "Qard-e-Hasna", icon: FaHandHoldingUsd },
+  { id: "process", label: "Application", icon: FaClock },
+  { id: "eligibility", label: "Eligibility", icon: FaUserTie },
 ]
 
 const faqs = [
   {
     id: 1,
     category: "general",
-    question: "What is Akhuwat Network and how does it work?",
+    question: "What is Akhuwat's Islamic microfinance model?",
     answer:
-      "Akhuwat Network is Pakistan's largest microfinance organization providing interest-free loans based on Islamic principles. We operate on the concept of Qarz-e-Hasna (benevolent loan) where borrowers receive financial assistance without any interest charges. Our model is built on trust, compassion, and community support, having served over 4.5 million families since 2001.",
-    icon: FaHandsHelping,
-    color: "from-emerald-600 to-teal-700",
+      "Akhuwat operates on the Islamic principle of Qard-e-Hasna (benevolent loans) as mentioned in Quran 2:245. We provide interest-free financial assistance following Shariah principles, eliminating riba (interest) from all transactions. Our model is sustained through Zakat, Sadaqah, and voluntary contributions, having served over 5.5 million families since 2001.",
+    icon: FaBookQuran,
+    color: "from-green-600 to-emerald-800",
+    verse: "Quran 2:245: 'Who is it that would loan Allah a goodly loan...'"
   },
   {
     id: 2,
-    category: "loans",
-    question: "What types of loans does Akhuwat offer?",
+    category: "qard-e-hasna",
+    question: "What types of Shariah-compliant loans does Akhuwat offer?",
     answer:
-      "We offer comprehensive loan services including Business Loans (up to ₨30 lacs), Microfinance Loans (₨50K-₨5 lacs), Personal Loans (up to ₨15 lacs), Healthcare Loans, Education Loans, Housing Loans (up to ₨50 lacs), and Emergency Loans. All loans are 100% interest-free and Sharia-compliant.",
-    icon: FaMoneyBillWave,
-    color: "from-blue-600 to-indigo-700",
+      "We offer fully halal financial solutions including: Business Loans (up to ₨3M), Microenterprise Loans (₨50K-₨500K), Education Loans, Healthcare Loans, Islamic Housing Finance (up to ₨5M), and Emergency Relief Loans. All financing follows Islamic contracts like Qard-e-Hasna (interest-free loans) and Diminishing Musharakah (for housing).",
+    icon: FaHandHoldingUsd,
+    color: "from-blue-600 to-indigo-800",
+    verse: "Quran 2:275: 'Allah has permitted trade and forbidden riba'"
   },
   {
     id: 3,
     category: "process",
-    question: "How long does the loan approval process take?",
+    question: "What is the Islamic approval process for loans?",
     answer:
-      "Our streamlined approval process typically takes 5-7 working days from application submission to loan disbursement. For emergency loans, we can process applications within 24-48 hours. The timeline may vary based on loan amount, documentation completeness, and verification requirements.",
+      "Our Shariah-compliant process takes 5-7 days: 1) Application with Islamic declaration, 2) Shariah review by our scholars, 3) Field verification, 4) Approval by local mosque committee, 5) Disbursement with Islamic contract signing. Emergency loans follow the same process but within 24-48 hours.",
     icon: FaClock,
-    color: "from-purple-600 to-pink-700",
+    color: "from-amber-600 to-orange-800",
+    verse: "Hadith: 'The truthful and trustworthy businessman will be with the prophets'"
   },
   {
     id: 4,
     category: "eligibility",
-    question: "Who is eligible for Akhuwat loans?",
+    question: "Who is eligible for Islamic financing from Akhuwat?",
     answer:
-      "Pakistani citizens aged 18-65 with a valid CNIC, proof of income or business activity, and two guarantors are eligible. We particularly focus on supporting women entrepreneurs, small business owners, students, and economically disadvantaged individuals. No collateral is required for most loan categories.",
-    icon: FaUsers,
-    color: "from-orange-600 to-red-700",
+      "Eligibility criteria based on Islamic principles: Muslim adults (18+) with valid CNIC, halal income source, two Muslim guarantors, and genuine need. We prioritize orphans, widows, and marginalized communities following the Sunnah of helping the most vulnerable.",
+    icon: FaUserTie,
+    color: "from-purple-600 to-violet-800",
+    verse: "Hadith: 'The upper hand (giving) is better than the lower hand (receiving)'"
   },
   {
     id: 5,
     category: "general",
-    question: "Why are Akhuwat loans interest-free?",
+    question: "How does Akhuwat ensure Shariah compliance?",
     answer:
-      "Akhuwat operates on Islamic principles where charging interest (riba) is prohibited. Our interest-free model is sustained through donations, zakat, and voluntary contributions from beneficiaries and supporters. This approach ensures that borrowers can focus on growing their businesses without the burden of interest payments.",
-    icon: FaShieldAlt,
-    color: "from-green-600 to-emerald-700",
+      "Our Shariah Board comprising renowned Islamic scholars oversees all operations. We: 1) Prohibit all forms of riba, 2) Avoid gharar (uncertainty) in contracts, 3) Screen businesses for halal compliance, 4) Use mosque-based disbursements, and 5) Conduct annual Shariah audits.",
+    icon: FaBookQuran,
+    color: "from-green-600 to-emerald-800",
+    verse: "Quran 5:1: 'Fulfill all contracts'"
   },
   {
     id: 6,
-    category: "loans",
-    question: "What is the maximum loan amount I can get?",
+    category: "qard-e-hasna",
+    question: "What is the Islamic basis for your housing finance?",
     answer:
-      "Loan amounts vary by category: Business Loans up to ₨30 lacs, Housing Loans up to ₨50 lacs, Personal Loans up to ₨15 lacs, Microfinance Loans ₨50K-₨5 lacs, and Education/Healthcare loans based on actual requirements. The final amount depends on your repayment capacity and business needs.",
-    icon: FaMoneyBillWave,
-    color: "from-teal-600 to-cyan-700",
+      "Our Diminishing Musharakah model follows Islamic principles: 1) Joint ownership between Akhuwat and client, 2) Client gradually purchases Akhuwat's share, 3) No interest charged - only actual ownership transfer costs, 4) Rent paid only on Akhuwat's share until full ownership.",
+    icon: FaHome,
+    color: "from-blue-600 to-indigo-800",
+    verse: "Hadith: 'Whoever builds a mosque for Allah, Allah will build for him a house in Paradise'"
   },
   {
     id: 7,
     category: "process",
-    question: "What documents are required for loan application?",
+    question: "What Islamic documents are required for application?",
     answer:
-      "Required documents include: Valid CNIC, Proof of income/business registration, Bank statements (last 6 months), Business plan (for business loans), Two guarantors with CNICs, Utility bills for address verification, and specific documents based on loan type (e.g., medical reports for healthcare loans).",
+      "Required documents include: 1) CNIC with Islamic declaration, 2) Proof of halal income, 3) Two Muslim guarantors, 4) Business details (for enterprise loans), 5) Property documents (for housing), 6) Educational/medical proofs (for specific loans), and 7) Mosque recommendation letter.",
     icon: FaClock,
-    color: "from-indigo-600 to-purple-700",
+    color: "from-amber-600 to-orange-800",
+    verse: "Hadith: 'Document your debts'"
   },
   {
     id: 8,
     category: "eligibility",
-    question: "Can women apply for loans independently?",
+    question: "Do you have special Islamic programs for women?",
     answer:
-      "Akhuwat strongly encourages women's financial empowerment. Women can apply for all loan categories independently. We have special women-focused programs with additional support including business training, mentorship, and flexible repayment terms. Over 60% of our beneficiaries are women entrepreneurs.",
-    icon: FaUsers,
-    color: "from-pink-600 to-rose-700",
+      "Yes, following Quranic injunctions about women's financial rights, we offer: 1) Women-only loan centers, 2) Hijab-friendly business training, 3) Home-based enterprise financing, 4) Islamic inheritance guidance, and 5) Female field officers. Over 65% of our beneficiaries are women maintaining Islamic values.",
+    icon: FaUserTie,
+    color: "from-pink-600 to-rose-800",
+    verse: "Quran 4:32: 'For men is a share of what they earn, and for women is a share of what they earn'"
   },
   {
     id: 9,
     category: "general",
-    question: "How does Akhuwat ensure loan repayment without interest?",
+    question: "How can I support Akhuwat Islamically?",
     answer:
-      "Our model is built on trust, community support, and moral obligation. We provide financial literacy training, business mentorship, and ongoing support to ensure borrower success. The guarantor system and community-based approach create a support network that encourages timely repayment while maintaining dignity.",
-    icon: FaHandsHelping,
-    color: "from-yellow-600 to-orange-700",
+      "You can contribute through: 1) Zakat (fulfilling your 2.5% obligation), 2) Sadaqah (voluntary charity), 3) Qard-e-Hasna (interest-free loans to Akhuwat), 4) Waqf (endowment), or 5) Volunteering. All donations are Shariah-certified and eligible for Islamic tax benefits.",
+    icon: FaHandshake,
+    color: "from-teal-600 to-cyan-800",
+    verse: "Quran 2:261: 'The example of those who spend their wealth in the way of Allah...'"
   },
   {
     id: 10,
-    category: "loans",
-    question: "Can I apply for multiple loans simultaneously?",
+    category: "qard-e-hasna",
+    question: "What makes Akhuwat's education loans Shariah-compliant?",
     answer:
-      "Generally, we recommend completing one loan cycle before applying for another to ensure manageable debt levels. However, in special circumstances (like emergency healthcare needs while having an existing business loan), we may consider multiple loans based on your repayment capacity and specific situation.",
-    icon: FaMoneyBillWave,
-    color: "from-red-600 to-pink-700",
+      "Our education financing follows Islamic principles by: 1) No interest charged, 2) Funding only Islamic-approved institutions, 3) Flexible repayment after graduation, 4) Scholarship options from Zakat funds, and 5) Moral obligation rather than legal enforcement of repayment.",
+    icon: FaGraduationCap,
+    color: "from-blue-600 to-indigo-800",
+    verse: "Hadith: 'Seeking knowledge is obligatory upon every Muslim'"
   },
 ]
 
@@ -124,16 +137,12 @@ const FaqSection = () => {
   }
 
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
-      {/* Enhanced Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-400 rounded-full animate-float blur-3xl"></div>
-        <div className="absolute bottom-32 right-20 w-80 h-80 bg-emerald-400 rounded-full animate-float-reverse blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-purple-400 rounded-full animate-pulse blur-2xl"></div>
-      </div>
-
+    <section className="py-24 bg-gradient-to-br from-amber-50 via-white to-emerald-50 relative overflow-hidden">
+      {/* Islamic Pattern Background */}
+      <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
+      
       <div className="max-w-6xl mx-auto px-4 relative z-10">
-        {/* Enhanced Header */}
+        {/* Islamic Inspired Header */}
         <motion.div
           className="text-center mb-20"
           initial={{ opacity: 0, y: 30 }}
@@ -142,48 +151,40 @@ const FaqSection = () => {
           viewport={{ once: true }}
         >
           <motion.div
-            className="flex items-center justify-center gap-4 mb-8"
+            className="flex flex-col items-center justify-center gap-2 mb-8"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center shadow-2xl">
-              <FaLightbulb className="text-white text-2xl" />
-            </div>
-            <div className="text-left">
-              <span className="text-blue-600 font-bold text-xl block">Akhuwat USA</span>
-              <span className="text-gray-500 text-sm">Frequently Asked Questions</span>
-            </div>
+            <div className="text-emerald-800 text-3xl mb-2 font-arabic">بسم الله الرحمن الرحيم</div>
+            <div className="w-20 h-1 bg-gradient-to-r from-amber-500 to-emerald-600 rounded-full"></div>
           </motion.div>
 
           <motion.h2
-            className="text-5xl md:text-7xl font-black text-gray-900 mb-8"
+            className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 font-serif"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Got{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              Questions?
-            </span>
+            Islamic <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 to-amber-600">Q&A</span>
           </motion.h2>
 
           <motion.p
-            className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Find answers to the most common questions about our interest-free loan programs and services
+            "Ask the people of knowledge if you do not know" (Quran 16:43). Find answers about our Shariah-compliant microfinance solutions.
           </motion.p>
         </motion.div>
 
-        {/* Category Filter */}
+        {/* Category Filter with Islamic Style */}
         <motion.div
-          className="flex flex-wrap justify-center gap-4 mb-16"
+          className="flex flex-wrap justify-center gap-3 mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
@@ -193,10 +194,10 @@ const FaqSection = () => {
             <motion.button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
-              className={`flex items-center gap-3 px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+              className={`flex items-center gap-3 px-5 py-3 rounded-lg font-medium transition-all duration-300 ${
                 activeCategory === category.id
-                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg"
-                  : "bg-white text-gray-600 hover:bg-blue-50 hover:text-blue-600 border border-gray-200"
+                  ? "bg-gradient-to-r from-emerald-700 to-amber-600 text-white shadow-lg"
+                  : "bg-white text-gray-600 hover:bg-amber-50 hover:text-emerald-700 border border-gray-200"
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -204,42 +205,45 @@ const FaqSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <category.icon className="w-4 h-4" />
+              <category.icon className="w-5 h-5" />
               {category.label}
             </motion.button>
           ))}
         </motion.div>
 
-        {/* FAQ List */}
-        <div className="space-y-6">
+        {/* FAQ List with Islamic Design */}
+        <div className="space-y-5">
           {filteredFaqs.map((faq, index) => (
             <motion.div
               key={faq.id}
-              className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden"
+              className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
               viewport={{ once: true }}
             >
+              {/* Islamic Decorative Element */}
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-500 to-emerald-600"></div>
+
               <motion.button
-                className="w-full p-8 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300"
+                className="w-full p-6 text-left flex items-center justify-between hover:bg-amber-50 transition-colors duration-300"
                 onClick={() => toggleFaq(faq.id)}
                 whileHover={{ x: 5 }}
               >
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-5">
                   <div
-                    className={`w-14 h-14 bg-gradient-to-r ${faq.color} rounded-full flex items-center justify-center flex-shrink-0`}
+                    className={`w-12 h-12 bg-gradient-to-r ${faq.color} rounded-lg flex items-center justify-center flex-shrink-0`}
                   >
-                    <faq.icon className="text-white text-xl" />
+                    <faq.icon className="text-white text-lg" />
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 pr-4">{faq.question}</h3>
+                  <h3 className="text-lg md:text-xl font-bold text-gray-900 pr-4">{faq.question}</h3>
                 </div>
                 <motion.div
                   animate={{ rotate: openFaq === faq.id ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
                   className="flex-shrink-0"
                 >
-                  <FaChevronDown className="w-6 h-6 text-gray-400" />
+                  <FaChevronDown className="w-5 h-5 text-gray-400" />
                 </motion.div>
               </motion.button>
 
@@ -252,10 +256,15 @@ const FaqSection = () => {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <div className="px-8 pb-8">
-                      <div className="pl-20">
+                    <div className="px-6 pb-6">
+                      <div className="pl-17">
+                        {/* Quran/Hadith Verse */}
+                        <div className="bg-emerald-50 border-r-4 border-emerald-600 p-3 mb-4 rounded-l-lg">
+                          <p className="text-sm font-medium text-emerald-800">"{faq.verse}"</p>
+                        </div>
+                        
                         <motion.p
-                          className="text-gray-600 text-lg leading-relaxed"
+                          className="text-gray-600 leading-relaxed"
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: 0.1, duration: 0.3 }}
@@ -271,7 +280,7 @@ const FaqSection = () => {
           ))}
         </div>
 
-        {/* Enhanced CTA Section */}
+        {/* Islamic Call to Action */}
         <motion.div
           className="text-center mt-20"
           initial={{ opacity: 0, y: 30 }}
@@ -279,40 +288,69 @@ const FaqSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-12 md:p-16 text-white relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-48 translate-x-48"></div>
-              <div className="absolute bottom-0 left-0 w-80 h-80 bg-white rounded-full translate-y-40 -translate-x-40"></div>
-            </div>
+          <div className="bg-gradient-to-r from-emerald-700 to-amber-600 rounded-xl p-10 text-white relative overflow-hidden border-2 border-white shadow-2xl">
+            {/* Islamic Pattern */}
+            <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
 
             <div className="relative z-10">
-              <h3 className="text-4xl md:text-6xl font-black mb-6">Still Have Questions?</h3>
-              <p className="text-2xl text-blue-100 mb-10 max-w-4xl mx-auto leading-relaxed">
-                Our dedicated support team is here to help you understand our programs and guide you through the
-                application process.
-              </p>
+              <motion.div
+                className="flex items-center justify-center gap-3 mb-6"
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <FaBookQuran className="text-3xl text-emerald-200" />
+                <span className="text-emerald-200 font-bold text-xl">Need Islamic Guidance?</span>
+              </motion.div>
 
-              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <motion.h3
+                className="text-3xl md:text-4xl font-bold mb-6 font-serif"
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                "If you are grateful, I will surely increase you [in favor]" (Quran 14:7)
+              </motion.h3>
+
+              <motion.p
+                className="text-emerald-100 mb-8 text-lg leading-relaxed max-w-4xl mx-auto"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                Our Islamic scholars are available to answer your questions about Shariah-compliant financing, Zakat eligibility, and how to participate in this Sadaqah Jariyah.
+              </motion.p>
+
+              <motion.div
+                className="flex flex-wrap justify-center gap-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6, duration: 0.6 }}
+                viewport={{ once: true }}
+              >
                 <motion.a
-                  href="/help-center"
-                  className="bg-white text-blue-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl flex items-center justify-center gap-3"
-                  whileHover={{ scale: 1.05, y: -2 }}
+                  href="/contact"
+                  className="bg-white text-emerald-700 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg flex items-center justify-center gap-3"
+                  whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <FaQuestionCircle />
-                  Visit Help Center
+                  <FaHandshake />
+                  Ask a Scholar
                 </motion.a>
 
                 <motion.a
                   href="tel:+923281969250"
-                  className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
-                  whileHover={{ scale: 1.05, y: -2 }}
+                  className="bg-white/10 backdrop-blur-sm border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
+                  whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  📞 Call: +92 328 1969250
+                  <FaUniversity />
+                  Islamic Finance Help
                 </motion.a>
-              </div>
+              </motion.div>
             </div>
           </div>
         </motion.div>

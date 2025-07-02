@@ -17,6 +17,7 @@ import {
   FaCheckCircle,
 } from "react-icons/fa"
 
+
 const Footer = () => {
   const [email, setEmail] = useState("")
   const [isSubscribed, setIsSubscribed] = useState(false)
@@ -28,24 +29,29 @@ const Footer = () => {
         { label: "Home", url: "/" },
         { label: "Loan Services", url: "/loans" },
         { label: "About Us", url: "/about" },
-        { label: "Apply Now", url: "/apply" },
+        // { label: "Apply Now", url: "/apply" },
         { label: "Contact", url: "/contact-us" },
       ],
     },
     {
       title: "Loan Programs",
       items: [
-        { label: "Business", url: "/loans/business" },
-        { label: "Education", url: "/loans/education" },
-        { label: "Emergency", url: "/loans/emergency" },
-        { label: "Housing", url: "/loans/housing" },
+        { label: "Business Qarz-e-Hasna", url: "/loans/business" },
+        { label: "Microfinance Solutions", url: "/loans/microfinance" },
+        { label: "Personal Finance", url: "/loans/personal" },
+        { label: "Healthcare Support", url: "/loans/healthcare" },
+        { label: "Education Funding", url: "/loans/education" },
+        { label: "Emergency Relief", url: "/loans/emergency" },
+        { label: "Housing Finance", url: "/loans/housing" },
       ],
     },
     {
       title: "Help",
       items: [
         { label: "Support", url: "/help-center" },
-        { label: "FAQs", url: "/faq" },
+        // { label: "FAQs", url: "/faq" },
+        {label:"Disclaimer", url:"/disclaimer"},
+        {label:"Terms-And-Conditions",url:"/terms-and-conditions"},
         { label: "Privacy Policy", url: "/privacy-policy" },
       ],
     },
@@ -110,7 +116,7 @@ const Footer = () => {
 
         <div className="grid md:grid-cols-4 gap-12 text-sm">
           <div>
-            <img src="/akhuwatfundslogo.png" alt="Akhuwat Logo" className="h-16 mb-4" />
+            <img src="/akhuwatfundslogo.png" alt="Akhuwat Logo" className="h-28 w-64 object-cover mb-4" />
             <p className="text-gray-300 mb-6">
               Akhuwat Islamic Microfinance empowers society with interest-free loans rooted in Islamic values and brotherhood.
             </p>

@@ -9,14 +9,16 @@ import {
   FaShieldAlt,
   FaClock,
   FaUsers,
-  FaMoneyBillWave,
+  FaHandHoldingHeart,
   FaHandshake,
   FaChartLine,
   FaPhone,
   FaEnvelope,
   FaCalculator,
   FaFileAlt,
+  FaMosque
 } from "react-icons/fa"
+import { FaBookQuran } from "react-icons/fa6";
 
 const BusinessLoansPage = () => {
   const [loanAmount, setLoanAmount] = useState(500000)
@@ -24,100 +26,112 @@ const BusinessLoansPage = () => {
 
   const loanFeatures = [
     {
-      icon: FaMoneyBillWave,
+      icon: FaBookQuran,
       title: "Up to ₨30 Lacs",
-      description: "Substantial funding for business growth and expansion",
+      description: "Shariah-compliant financing for business growth",
       color: "text-emerald-600",
+      verse: "Quran 2:245"
     },
     {
       icon: FaShieldAlt,
-      title: "0% Interest Rate",
-      description: "Completely interest-free, Sharia-compliant financing",
+      title: "0% Riba",
+      description: "Completely interest-free, halal financing",
       color: "text-blue-600",
+      verse: "Quran 2:275"
     },
     {
       icon: FaClock,
-      title: "Quick 5-Day Approval",
-      description: "Fast processing with minimal documentation",
+      title: "5-Day Approval",
+      description: "Fast processing with Islamic documentation",
       color: "text-purple-600",
+      verse: "Hadith"
     },
     {
       icon: FaUsers,
-      title: "No Collateral Required",
-      description: "Trust-based lending with guarantor system",
-      color: "text-orange-600",
+      title: "No Collateral",
+      description: "Trust-based system with Islamic guarantors",
+      color: "text-amber-600",
+      verse: "Quran 5:1"
     },
   ]
 
   const businessTypes = [
     {
       title: "Retail & Trading",
-      description: "Shops, stores, wholesale, and retail businesses",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300&h=200&fit=crop",
-      examples: ["General Stores", "Clothing Shops", "Electronics", "Wholesale Trading"],
+      description: "Halal businesses following Islamic commercial principles",
+      image: "/islamic-shop.jpg",
+      examples: ["Halal Groceries", "Islamic Clothing", "Bookstores", "General Trading"],
       loanRange: "₨50K - ₨15L",
+      islamicPrinciple: "Permissible trade in Islam"
     },
     {
-      title: "Manufacturing",
-      description: "Small to medium manufacturing units and production",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=200&fit=crop",
-      examples: ["Textile Units", "Food Processing", "Handicrafts", "Small Industries"],
+      title: "Islamic Manufacturing",
+      description: "Production units adhering to Shariah guidelines",
+      image: "/halal-factory.jpg",
+      examples: ["Halal Food Processing", "Islamic Textiles", "Educational Materials", "Handicrafts"],
       loanRange: "₨1L - ₨30L",
+      islamicPrinciple: "Halal means of production"
     },
     {
-      title: "Services",
-      description: "Service-based businesses and professional services",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop",
-      examples: ["Restaurants", "Transport", "IT Services", "Healthcare"],
+      title: "Islamic Services",
+      description: "Service providers operating under Islamic ethics",
+      image: "/islamic-restaurant.jpg",
+      examples: ["Halal Restaurants", "Islamic Education", "IT Services", "Healthcare"],
       loanRange: "₨75K - ₨20L",
+      islamicPrinciple: "Ethical services in Islam"
     },
     {
-      title: "Agriculture",
-      description: "Farming, livestock, and agricultural businesses",
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=300&h=200&fit=crop",
-      examples: ["Crop Farming", "Livestock", "Dairy", "Poultry"],
+      title: "Islamic Agriculture",
+      description: "Farming following Islamic environmental ethics",
+      image: "/islamic-farming.jpg",
+      examples: ["Organic Farming", "Halal Livestock", "Dairy Production", "Date Farming"],
       loanRange: "₨1L - ₨25L",
+      islamicPrinciple: "Stewardship of land"
     },
   ]
 
   const applicationSteps = [
     {
       step: 1,
-      title: "Initial Consultation",
-      description: "Discuss your business needs with our expert team",
-      icon: FaHandshake,
+      title: "Islamic Consultation",
+      description: "Discuss your halal business needs with our scholars",
+      icon: FaMosque,
       duration: "30 minutes",
+      verse: "Quran 16:43"
     },
     {
       step: 2,
-      title: "Document Submission",
-      description: "Submit required documents and business plan",
-      icon: FaFileAlt,
+      title: "Shariah Documentation",
+      description: "Submit Islamic business plan and documents",
+      icon: FaBookQuran,
       duration: "1 day",
+      verse: "Hadith"
     },
     {
       step: 3,
-      title: "Business Assessment",
-      description: "Our team evaluates your business potential",
-      icon: FaChartLine,
+      title: "Islamic Assessment",
+      description: "Evaluation by our Shariah committee",
+      icon: FaShieldAlt,
       duration: "2-3 days",
+      verse: "Quran 5:2"
     },
     {
       step: 4,
       title: "Approval & Disbursement",
-      description: "Loan approval and fund disbursement",
-      icon: FaCheckCircle,
+      description: "Qard-e-Hasna contract signing and funds",
+      icon: FaHandHoldingHeart,
       duration: "1-2 days",
+      verse: "Quran 2:282"
     },
   ]
 
   const requirements = [
-    "Valid CNIC and business registration",
-    "Business plan and financial projections",
+    "Valid CNIC and halal business registration",
+    "Islamic business plan with financial projections",
     "Bank statements (last 6 months)",
-    "Two guarantors with valid CNICs",
+    "Two Muslim guarantors with CNICs",
     "Business location verification",
-    "Community recommendation letter",
+    "Mosque recommendation letter"
   ]
 
   const calculateMonthlyPayment = () => {
@@ -125,56 +139,55 @@ const BusinessLoansPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-emerald-50">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-blue-400 rounded-full animate-float blur-3xl"></div>
-          <div className="absolute bottom-32 right-20 w-80 h-80 bg-emerald-400 rounded-full animate-float-reverse blur-3xl"></div>
-        </div>
-
+        {/* Islamic Pattern Background */}
+        <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
+        
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
+              {/* Islamic Header */}
               <motion.div
                 className="flex items-center gap-4 mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center shadow-2xl">
-                  <FaBuilding className="text-white text-2xl" />
+                <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-green-600 rounded-full flex items-center justify-center shadow-2xl">
+                  <span className="text-white text-xl font-arabic">ق</span>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-bold text-xl block">Akhuwat Network</span>
-                  <span className="text-gray-500 text-sm">Business Financing Solutions</span>
+                  <span className="text-emerald-600 font-bold text-xl block font-arabic">قرض الحسنة</span>
+                  <span className="text-gray-500 text-sm">Shariah-Compliant Business Financing</span>
                 </div>
               </motion.div>
 
               <motion.h1
-                className="text-5xl md:text-7xl font-black text-gray-900 mb-8"
+                className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
-                Business{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                  Loans
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-amber-600">
+                  Islamic Business Qard-e-Hasna
                 </span>
               </motion.h1>
 
               <motion.p
-                className="text-2xl text-gray-600 mb-10 leading-relaxed"
+                className="text-xl text-gray-600 mb-10 leading-relaxed"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
               >
-                Scale your business with our Sharia-compliant, interest-free financing solutions. From startups to
-                established enterprises, we provide the capital you need to grow.
+                "Who is it that would loan Allah a goodly loan so He may multiply it for him many times over?" (Quran 2:245). 
+                Grow your halal business with our riba-free financing based on Islamic principles of Qard-e-Hasna.
               </motion.p>
 
+              {/* Islamic Features Grid */}
               <motion.div
-                className="grid grid-cols-2 gap-6 mb-10"
+                className="grid grid-cols-2 gap-6"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.6 }}
@@ -182,42 +195,42 @@ const BusinessLoansPage = () => {
                 {loanFeatures.map((feature, index) => (
                   <motion.div
                     key={index}
-                    className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200"
-                    whileHover={{ scale: 1.05, y: -5 }}
+                    className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-200"
+                    whileHover={{ scale: 1.03, y: -5 }}
                     transition={{ duration: 0.3 }}
                   >
                     <feature.icon className={`text-3xl ${feature.color} mb-3`} />
                     <h3 className="font-bold text-gray-900 mb-2">{feature.title}</h3>
-                    <p className="text-sm text-gray-600">{feature.description}</p>
+                    <p className="text-sm text-gray-600 mb-2">{feature.description}</p>
+                    <p className="text-xs text-emerald-600 italic">"{feature.verse}"</p>
                   </motion.div>
                 ))}
               </motion.div>
 
               <motion.div
-                className="flex flex-col sm:flex-row gap-6"
+                className="flex flex-col sm:flex-row gap-6 mt-10"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
                 <motion.a
-                href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
+                  href="/apply"
+                  className="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-8 py-4 rounded-lg font-bold hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Apply Now
+                  <FaHandHoldingHeart />
+                  Apply for Qard-e-Hasna
                   <FaArrowRight />
                 </motion.a>
 
                 <motion.button
-                  className="bg-white/80 backdrop-blur-sm border-2 border-blue-600 text-blue-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-blue-50 transition-all duration-300 flex items-center justify-center gap-3"
+                  className="bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-lg font-bold hover:bg-emerald-50 transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <FaPhone />
-                  Call: +92 328 1969250
+                  Islamic Consultation
                 </motion.button>
               </motion.div>
             </motion.div>
@@ -228,33 +241,21 @@ const BusinessLoansPage = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <img src="/businessloanbanner.jpg" alt="Business Loans" className="w-full h-96 object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="relative overflow-hidden rounded-xl shadow-2xl border-2 border-emerald-500/20">
+                <img src="/islamic-business-finance.jpg" alt="Islamic Business Finance" className="w-full h-96 object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
 
                 <motion.div
-                  className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl"
+                  className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-2xl"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.8, duration: 0.6 }}
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 1.03 }}
                 >
                   <div className="text-center">
-                    <div className="text-3xl font-black text-blue-600 mb-2">₨30L</div>
-                    <div className="text-sm text-gray-600 font-semibold">Maximum Loan</div>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1, duration: 0.6 }}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <div className="text-center">
-                    <div className="text-3xl font-black text-emerald-600 mb-2">0%</div>
-                    <div className="text-sm text-gray-600 font-semibold">Interest Rate</div>
+                    <div className="text-2xl font-black text-emerald-600 mb-1">₨30L</div>
+                    <div className="text-sm text-gray-600 font-semibold">Maximum Qard-e-Hasna</div>
+                    <div className="text-xs text-emerald-600 mt-1">"Cooperate in righteousness" (Quran 5:2)</div>
                   </div>
                 </motion.div>
               </div>
@@ -263,7 +264,7 @@ const BusinessLoansPage = () => {
         </div>
       </section>
 
-      {/* Loan Calculator Section */}
+      {/* Islamic Loan Calculator Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
@@ -273,28 +274,25 @@ const BusinessLoansPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl font-black text-gray-900 mb-8">
-              Loan{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                Calculator
-              </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-serif">
+              Islamic <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-amber-600">Qard-e-Hasna Calculator</span>
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Calculate your monthly payments with our interest-free loan calculator
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              "Document your debts" (Hadith). Calculate your halal repayment plan.
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
-              className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-12"
+              className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-10 border border-emerald-100"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
               <div className="flex items-center gap-4 mb-8">
-                <FaCalculator className="text-3xl text-blue-600" />
-                <h3 className="text-3xl font-bold text-gray-900">Calculate Your Loan</h3>
+                <FaCalculator className="text-3xl text-emerald-600" />
+                <h3 className="text-2xl font-bold text-gray-900">Calculate Your Qard-e-Hasna</h3>
               </div>
 
               <div className="space-y-8">
@@ -318,7 +316,7 @@ const BusinessLoansPage = () => {
                 </div>
 
                 <div>
-                  <label className="block text-lg font-semibold text-gray-700 mb-4">Loan Term: {loanTerm} months</label>
+                  <label className="block text-lg font-semibold text-gray-700 mb-4">Repayment Term: {loanTerm} months</label>
                   <input
                     type="range"
                     min="6"
@@ -337,48 +335,46 @@ const BusinessLoansPage = () => {
             </motion.div>
 
             <motion.div
-              className="bg-white rounded-3xl shadow-2xl p-12 border border-gray-100"
+              className="bg-white rounded-xl shadow-lg p-10 border border-gray-200"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-3xl font-bold text-gray-900 mb-8">Loan Summary</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-8">Islamic Repayment Summary</h3>
 
               <div className="space-y-6">
-                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-2xl">
-                  <span className="text-lg font-semibold text-gray-700">Loan Amount</span>
-                  <span className="text-2xl font-bold text-blue-600">₨{loanAmount.toLocaleString()}</span>
+                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
+                  <span className="text-lg font-semibold text-gray-700">Qard-e-Hasna Amount</span>
+                  <span className="text-xl font-bold text-emerald-600">₨{loanAmount.toLocaleString()}</span>
                 </div>
 
-                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-2xl">
-                  <span className="text-lg font-semibold text-gray-700">Interest Rate</span>
-                  <span className="text-2xl font-bold text-emerald-600">0%</span>
+                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
+                  <span className="text-lg font-semibold text-gray-700">Riba Rate</span>
+                  <span className="text-xl font-bold text-red-600">0%</span>
                 </div>
 
-                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-2xl">
-                  <span className="text-lg font-semibold text-gray-700">Loan Term</span>
-                  <span className="text-2xl font-bold text-purple-600">{loanTerm} months</span>
+                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
+                  <span className="text-lg font-semibold text-gray-700">Repayment Term</span>
+                  <span className="text-xl font-bold text-purple-600">{loanTerm} months</span>
                 </div>
 
-                <div className="flex justify-between items-center p-6 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl text-white">
+                <div className="flex justify-between items-center p-6 bg-gradient-to-r from-emerald-600 to-green-600 rounded-xl text-white">
                   <span className="text-lg font-semibold">Monthly Payment</span>
-                  <span className="text-3xl font-black">₨{calculateMonthlyPayment().toLocaleString()}</span>
+                  <span className="text-2xl font-black">₨{calculateMonthlyPayment().toLocaleString()}</span>
                 </div>
 
                 <div className="text-center pt-6">
                   <p className="text-gray-600 mb-6">
-                    No interest, no hidden fees, no processing charges - just simple, transparent repayment.
+                    No riba, no hidden fees - just simple Islamic repayment of principal amount only.
                   </p>
                   <motion.a
-                  href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
+                    href="/apply"
+                    className="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-8 py-4 rounded-lg font-bold hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    Apply for This Loan
+                    Apply for Qard-e-Hasna
                     <FaArrowRight />
                   </motion.a>
                 </div>
@@ -388,8 +384,8 @@ const BusinessLoansPage = () => {
         </div>
       </section>
 
-      {/* Business Types Section */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
+      {/* Halal Business Types Section */}
+      <section className="py-24 bg-gradient-to-br from-emerald-50 to-amber-50">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             className="text-center mb-20"
@@ -398,14 +394,11 @@ const BusinessLoansPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl font-black text-gray-900 mb-8">
-              Business{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                Categories
-              </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-serif">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-amber-600">Halal Business Categories</span>
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              We support diverse business sectors with tailored financing solutions
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              "Eat from what is good and lawful" (Quran 2:172). We support Shariah-compliant businesses.
             </p>
           </motion.div>
 
@@ -413,7 +406,7 @@ const BusinessLoansPage = () => {
             {businessTypes.map((type, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500"
+                className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
@@ -421,16 +414,19 @@ const BusinessLoansPage = () => {
                 whileHover={{ y: -10 }}
               >
                 <div className="relative h-48 overflow-hidden">
-                  <img src={type.image || "/placeholder.svg"} alt={type.title} className="w-full h-full object-cover" />
+                  <img src={type.image} alt={type.title} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-xl font-bold">{type.title}</h3>
-                    <p className="text-sm text-blue-200">{type.loanRange}</p>
+                    <h3 className="text-lg font-bold">{type.title}</h3>
+                    <p className="text-xs text-emerald-200">{type.loanRange}</p>
                   </div>
                 </div>
 
                 <div className="p-6">
                   <p className="text-gray-600 mb-4">{type.description}</p>
+                  <div className="bg-amber-50 border-l-4 border-amber-500 p-2 mb-4 rounded-r text-sm italic">
+                    "{type.islamicPrinciple}"
+                  </div>
                   <div className="space-y-2">
                     {type.examples.map((example, i) => (
                       <div key={i} className="flex items-center gap-2 text-sm text-gray-700">
@@ -446,7 +442,7 @@ const BusinessLoansPage = () => {
         </div>
       </section>
 
-      {/* Application Process */}
+      {/* Islamic Application Process */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
@@ -456,14 +452,11 @@ const BusinessLoansPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl font-black text-gray-900 mb-8">
-              Application{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                Process
-              </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-serif">
+              Islamic <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-amber-600">Application Process</span>
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Simple 4-step process to get your business loan approved in just 5 days
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              "The truthful and trustworthy businessman will be with the prophets" (Hadith)
             </p>
           </motion.div>
 
@@ -478,55 +471,56 @@ const BusinessLoansPage = () => {
                 viewport={{ once: true }}
               >
                 <motion.div className="relative mb-8" whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-                  <div className="w-24 h-24 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto shadow-2xl">
-                    <step.icon className="text-white text-3xl" />
+                  <div className="w-20 h-20 bg-gradient-to-r from-emerald-600 to-green-600 rounded-full flex items-center justify-center mx-auto shadow-2xl">
+                    <step.icon className="text-white text-2xl" />
                   </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
                     {step.step}
                   </div>
                 </motion.div>
 
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">{step.title}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">{step.title}</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">{step.description}</p>
-                <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold">
+                <div className="bg-emerald-50 text-emerald-600 px-3 py-1 rounded-full text-xs font-semibold inline-flex items-center gap-1">
                   <FaClock className="text-xs" />
                   {step.duration}
                 </div>
+                <div className="text-xs text-amber-600 italic mt-2">"{step.verse}"</div>
 
                 {index < applicationSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-12 left-full w-full">
-                    <FaArrowRight className="text-blue-300 text-2xl" />
+                  <div className="hidden lg:block absolute top-10 left-full w-full">
+                    <FaArrowRight className="text-emerald-300 text-xl" />
                   </div>
                 )}
               </motion.div>
             ))}
           </div>
 
-          {/* Requirements Section */}
+          {/* Islamic Requirements Section */}
           <motion.div
-            className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-12"
+            className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-10 border border-emerald-200"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">Required Documents</h3>
-              <p className="text-lg text-gray-600">Simple documentation for quick processing</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Shariah Requirements</h3>
+              <p className="text-lg text-gray-600">Documentation for halal business financing</p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {requirements.map((requirement, index) => (
                 <motion.div
                   key={index}
-                  className="flex items-center gap-4 bg-white rounded-2xl p-6 shadow-lg"
+                  className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-md"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
                   viewport={{ once: true }}
                   whileHover={{ x: 5 }}
                 >
-                  <FaCheckCircle className="text-emerald-500 text-xl flex-shrink-0" />
+                  <FaCheckCircle className="text-emerald-500 text-lg flex-shrink-0 mt-1" />
                   <span className="text-gray-700 font-medium">{requirement}</span>
                 </motion.div>
               ))}
@@ -535,12 +529,10 @@ const BusinessLoansPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-blue-600 to-indigo-600 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-48 translate-x-48"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-white rounded-full translate-y-40 -translate-x-40"></div>
-        </div>
+      {/* Islamic CTA Section */}
+      <section className="py-24 bg-gradient-to-r from-emerald-700 to-green-600 text-white relative overflow-hidden">
+        {/* Islamic Pattern Overlay */}
+        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
 
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <motion.div
@@ -550,35 +542,30 @@ const BusinessLoansPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl md:text-6xl font-black mb-8">Ready to Grow Your Business?</h2>
-            <p className="text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Join thousands of successful entrepreneurs who have transformed their businesses with Akhuwat's
-              interest-free financing solutions.
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 font-serif">"Allah will deprive usury of all blessing" (Quran 2:276)</h2>
+            <p className="text-xl text-emerald-100 mb-12 max-w-4xl mx-auto leading-relaxed">
+              Choose the halal path for your business growth with our Islamic Qard-e-Hasna program, free from riba and fully Shariah-compliant.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-              href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                className="bg-white text-blue-600 px-12 py-6 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl flex items-center justify-center gap-3"
+                href="/apply"
+                className="bg-white text-emerald-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <FaBuilding />
-                Apply for Business Loan
+                <FaHandHoldingHeart />
+                Apply for Qard-e-Hasna
               </motion.a>
 
               <motion.a
-              href="https://wa.me/923281969250"
-  target="_blank"
-  rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
+                href="/contact"
+                className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <FaEnvelope />
-                Get Free Consultation
+                <FaBookQuran />
+                Shariah Consultation
               </motion.a>
             </div>
           </motion.div>
