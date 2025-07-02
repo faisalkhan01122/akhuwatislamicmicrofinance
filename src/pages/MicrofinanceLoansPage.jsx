@@ -113,7 +113,7 @@ const MicrofinanceLoansPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-green-50">
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden bg-[url('/islamic-pattern.jpg')] bg-opacity-5">
+      <section className="relative py-24 overflow-hidden bg-[url('')] bg-opacity-5">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-10 w-96 h-96 bg-green-400 rounded-full animate-float blur-3xl"></div>
           <div className="absolute bottom-32 right-20 w-80 h-80 bg-blue-400 rounded-full animate-float-reverse blur-3xl"></div>
@@ -185,9 +185,9 @@ const MicrofinanceLoansPage = () => {
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
                 <motion.a 
-                  href="https://wa.me/923281969250"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/contact-us"
+                  // target="_blank"
+                  // rel="noopener noreferrer"
                   className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-10 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
@@ -215,7 +215,7 @@ const MicrofinanceLoansPage = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-green-600">
-                <img src="https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg" alt="Akhuwat Microfinance" className="w-full h-96 object-cover" />
+                <img src="https://alhudacibe.com/img01/pressrelease/pressrelease124.jpg" alt="Akhuwat Microfinance" className="w-full h-96 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
                 <motion.div
@@ -400,9 +400,9 @@ const MicrofinanceLoansPage = () => {
 
                 <div className="text-center pt-6">
                   <motion.a 
-                    href="https://wa.me/923281969250"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/contact-us"
+                    // target="_blank"
+                    // rel="noopener noreferrer"
                     className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 mx-auto"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
@@ -555,21 +555,19 @@ const MicrofinanceLoansPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-                href="https://wa.me/923281969250"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/contact-us"
+                // target="_blank"
+                // rel="noopener noreferrer"
                 className="bg-white text-green-600 px-12 py-6 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaMosque />
-                Apply for Qard-e-Hasan
+                Apply Now
               </motion.a>
 
               <motion.a
-              href="https://wa.me/923281969250"
-                target="_blank"
-                rel="noopener noreferrer"
+              href="tel:+923281969250"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
