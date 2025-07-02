@@ -17,7 +17,7 @@ const partners = [
     id: 1,
     name: "ISNA",
     fullName: "Islamic Society of North America",
-    logo: "https://www.isna.net/wp-content/uploads/2020/05/isna-logo-white-bg.png",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSu87jHTPeb7IM5R7FU5L0P4N1AaYCOWAoyg&s",
     description: "Promoting Islamic values and supporting Qard-e-Hasna initiatives across North America",
     islamicPrinciple: "Cooperate in righteousness and piety"
   },
@@ -25,7 +25,7 @@ const partners = [
     id: 2,
     name: "IIFA",
     fullName: "International Islamic Finance Association",
-    logo: "https://iifa-aifi.org/wp-content/uploads/2020/12/iifa-logo.png",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsrnRUCPSSdaY2sD3FdPdwaN83GeKLQ7QF3A&s",
     description: "Advancing Shariah-compliant microfinance solutions globally",
     islamicPrinciple: "Prohibiting Riba (interest) in all transactions"
   },
@@ -33,7 +33,7 @@ const partners = [
     id: 3,
     name: "Al-Khair Foundation",
     fullName: "Al-Khair Islamic Foundation",
-    logo: "https://alkhair.org/wp-content/uploads/2022/03/alkhair-logo.png",
+    logo: "https://alkhair.org/wp-content/uploads/2017/02/AKF.jpg",
     description: "Implementing Islamic relief and development programs worldwide",
     islamicPrinciple: "Sadaqah that endures benefits forever"
   },
@@ -41,7 +41,7 @@ const partners = [
     id: 4,
     name: "ICNA Relief",
     fullName: "Islamic Circle of North America Relief",
-    logo: "https://icnarelief.org/wp-content/uploads/2021/03/icna-relief-logo.png",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRviwfPAYSEgiUub9gDxPwmFZoaz5fK23Vang&s",
     description: "Providing Islamic social services and interest-free loans",
     islamicPrinciple: "Charity extinguishes sins as water extinguishes fire"
   },
@@ -49,7 +49,7 @@ const partners = [
     id: 5,
     name: "Islamic Development Bank",
     fullName: "IsDB Group",
-    logo: "https://www.isdb.org/sites/default/files/media/documents/2021-09/IsDB_Logo_English_Blue.png",
+    logo: "https://cdn.britannica.com/11/142711-004-9E7D4F73/headquarters-Islamic-Development-Bank-Jiddah-Saudi-Arabia.jpg",
     description: "Funding development projects according to Islamic principles",
     islamicPrinciple: "Economic empowerment of the Ummah"
   },
@@ -57,7 +57,7 @@ const partners = [
     id: 6,
     name: "Muslim Hands",
     fullName: "Muslim Hands International",
-    logo: "https://muslimhands.org.uk/images/logos/mh-logo.svg",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPdlenFMHxcjW4je3ypZzWsBpIbWUIr2znfg&s",
     description: "Implementing Zakat-compliant poverty alleviation programs",
     islamicPrinciple: "The upper hand (giving) is better than the lower hand (receiving)"
   },
@@ -65,7 +65,7 @@ const partners = [
     id: 7,
     name: "Awqaf SA",
     fullName: "Awqaf Foundation of South Africa",
-    logo: "https://awqafsa.org.za/wp-content/uploads/2021/03/awqafsa-logo.png",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWG4XpRDww2aZlJby9R-fs88zBu7A4czHbTQ&s",
     description: "Managing Islamic endowments for sustainable development",
     islamicPrinciple: "Perpetual charity (Sadaqah Jariyah)"
   },
@@ -73,7 +73,7 @@ const partners = [
     id: 8,
     name: "IFE",
     fullName: "Islamic Foundation for Education",
-    logo: "https://ife.edu.pk/wp-content/uploads/2021/03/ife-logo.png",
+    logo: "https://abi.edu.pk/wp-content/uploads/2024/10/blog.jpeg",
     description: "Providing Islamic education with modern knowledge",
     islamicPrinciple: "Seeking knowledge is obligatory upon every Muslim"
   }
@@ -105,7 +105,7 @@ const CollaboratingPartnersSection = () => {
   return (
     <section className="py-24 bg-gradient-to-br from-amber-50 via-white to-emerald-50 relative overflow-hidden">
       {/* Islamic Pattern Background */}
-      <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
+      <div className="absolute inset-0 opacity-5 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYCfEhf1kIY9CaPG2Woik1S5fVMi1GFDuIkg&s')]"></div>
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Islamic Inspired Header */}
@@ -248,7 +248,7 @@ const CollaboratingPartnersSection = () => {
           viewport={{ once: true }}
         >
           {/* Islamic Pattern */}
-          <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
+          <div className="absolute inset-0 opacity-10 bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')]"></div>
 
           <div className="relative z-10 text-center">
             <motion.div
@@ -290,7 +290,7 @@ const CollaboratingPartnersSection = () => {
               viewport={{ once: true }}
             >
               <motion.a
-                href="/partnerships"
+                href="/contact-us"
                 className="bg-white text-emerald-700 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -300,7 +300,7 @@ const CollaboratingPartnersSection = () => {
               </motion.a>
 
               <motion.a
-                href="/zakat"
+                href="/contact-us"
                 className="bg-white/10 backdrop-blur-sm border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -310,7 +310,7 @@ const CollaboratingPartnersSection = () => {
               </motion.a>
 
               <motion.a
-                href="/volunteer"
+                href="/contact-us"
                 className="bg-white/10 backdrop-blur-sm border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

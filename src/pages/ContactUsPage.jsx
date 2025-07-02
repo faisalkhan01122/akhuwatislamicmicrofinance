@@ -25,7 +25,8 @@ const ContactUsPage = () => {
     {
       icon: FaPhone,
       title: "Islamic Helpdesk",
-      details: ["+92 300 111 AKHUWAT", "Available from Fajr to Isha prayers"],
+     
+      details: ["+92 328 196 9250", "Available from Fajr to Isha prayers"],
       color: "text-blue-600",
       bgColor: "from-blue-50 to-blue-100",
       ayah: "“Whoever relieves a difficulty, Allah will relieve his difficulties” (Bukhari)"
@@ -52,7 +53,7 @@ const ContactUsPage = () => {
     { 
       city: "Islamabad", 
       address: "House 45, Street 12, F-8/1, Islamabad", 
-      phone: "+92 300 111 AKHUWAT",
+      phone: "+92 328 196 9250",
       prayerTimes: "Fajr: 5:00 AM | Dhuhr: 12:30 PM"
     }
   ]
@@ -306,19 +307,21 @@ const ContactUsPage = () => {
                 </h3>
                 <div className="space-y-4">
                   <motion.a
-                    href="tel:+92300111254882"
+                  href="tel:+923281969250"
                     className="flex items-center gap-4 p-4 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition-all"
                     whileHover={{ x: 5 }}
                   >
                     <FaPhone className="text-emerald-600 text-xl" />
                     <div>
                       <p className="font-semibold text-gray-900">Islamic Helpdesk</p>
-                      <p className="text-sm text-gray-600">+92 300 111 AKHUWAT</p>
+                      <p className="text-sm text-gray-600">+92 328 196 9250</p>
                     </div>
                   </motion.a>
 
                   <motion.a
-                    href="https://wa.me/92300111254882"
+                   href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 bg-green-50 rounded-xl hover:bg-green-100 transition-all"
                     whileHover={{ x: 5 }}
                   >
@@ -423,7 +426,7 @@ const ContactUsPage = () => {
               </motion.a>
 
               <motion.a
-                href="/visit-mosque"
+                href="/contact-us"
                 className="bg-white/10 backdrop-blur-sm border border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05 }}
               >

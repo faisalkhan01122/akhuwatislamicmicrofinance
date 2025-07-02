@@ -70,7 +70,7 @@ const causes = [
     title: "Masjid-ul-Mustafa",
     category: "Mosque Construction",
     description: "Building community mosques that serve as centers for worship, education and social services. Each mosque becomes a hub for Islamic revival in its community.",
-    image: "https://images.unsplash.com/photo-1542816417-0983670d25b9?w=800&h=600&fit=crop",
+    image: "https://royalorchard.pk/wp-content/uploads/2022/12/IMG_5254-scaled.jpg",
     icon: <FaMosque />,
     color: "from-yellow-600 to-amber-800",
     raised: "PKR 650 Million",
@@ -85,7 +85,7 @@ const causes = [
     title: "Islamic Sustainable Farming",
     category: "Agriculture",
     description: "Promoting Zabiha-compliant halal farming practices that follow Islamic environmental ethics. Supporting Muslim farmers with interest-free agricultural loans.",
-    image: "https://images.unsplash.com/photo-1586771107445-d3ca888129ce?w=800&h=600&fit=crop",
+    image: "https://www.greenprophet.com/wp-content/uploads/islamic-era-farming-scaled.jpg",
     icon: <FaLeaf />,
     color: "from-lime-600 to-green-800",
     raised: "PKR 320 Million",
@@ -298,7 +298,7 @@ const FeaturedCausesSection = () => {
                   whileTap={{ scale: 0.98 }}
                 >
                   <FaHandHoldingHeart className="w-4 h-4" />
-                  <Link to={'/donate'}>Give Sadaqah</Link>
+                  <Link to={'/contact-us'}>Apply Now</Link>
                   <motion.div
                     animate={{ x: [0, 5, 0] }}
                     transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
@@ -321,24 +321,26 @@ const FeaturedCausesSection = () => {
         >
           <div className="bg-gradient-to-r from-emerald-700 to-amber-600 rounded-xl p-10 text-white relative overflow-hidden border-2 border-white shadow-2xl">
             {/* Islamic Pattern */}
-            <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
+            <div className="absolute inset-0 opacity-10 bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')]"></div>
 
             <div className="relative z-10">
               <h3 className="text-3xl md:text-5xl font-bold mb-6 font-serif">"The believer's shade on the Day of Judgment will be his charity." (Hadith)</h3>
               
               <div className="flex flex-col sm:flex-row gap-5 justify-center mt-10">
                 <motion.a
-                  href="/donate"
+                  href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                   className="bg-white text-emerald-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <FaDonate />
-                  Give Your Zakat
+                 Apply Now
                 </motion.a>
 
                 <motion.a
-                  href="/causes"
+                  href="/about"
                   className="bg-white/10 backdrop-blur-sm border border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}

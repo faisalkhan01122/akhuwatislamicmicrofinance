@@ -21,9 +21,7 @@ import { RiRefund2Fill } from "react-icons/ri"
 import { BsFillCalendar2CheckFill } from "react-icons/bs"
 
 const HelpCenterPage = () => {
-  const [searchQuery, setSearchQuery] = useState("")
-  const [activeCategory, setActiveCategory] = useState("all")
-
+ 
   const helpCategories = [
     { 
       id: "qard", 
@@ -74,7 +72,7 @@ const HelpCenterPage = () => {
       icon: FaPhone,
       title: "Telephone Support",
       description: "Speak with our Islamic finance advisors",
-      contact: "+92 300 111 AKHUWAT (254882)",
+      contact: "+92 328 196 9250",
       hours: "24/7 according to need",
       color: "from-green-600 to-emerald-700",
       islamicNote: "Available even during prayer breaks"
@@ -83,7 +81,7 @@ const HelpCenterPage = () => {
       icon: FaWhatsapp,
       title: "WhatsApp Assistance",
       description: "Get quick responses via messaging",
-      contact: "+92 321 786 1111",
+      contact: "+92 328 196 9250",
       hours: "Response within 1 hour",
       color: "from-teal-600 to-green-700",
       islamicNote: "Share Islamic financial resources"
@@ -151,7 +149,7 @@ const HelpCenterPage = () => {
             </motion.p>
 
             {/* Islamic Search Bar */}
-            <motion.div
+            {/* <motion.div
               className="max-w-2xl mx-auto relative"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -177,7 +175,7 @@ const HelpCenterPage = () => {
                 </motion.button>
               </div>
               <p className="text-emerald-200 text-sm mt-3 text-right">Type your question in English or Urdu</p>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Islamic Contact Methods */}
@@ -200,14 +198,17 @@ const HelpCenterPage = () => {
                 <p className="text-emerald-200 text-sm mb-3">{method.description}</p>
                 <div className="text-lg font-bold text-amber-300 mb-2">{method.contact}</div>
                 <div className="text-sm text-emerald-200/80 mb-3">{method.hours}</div>
-                <div className="text-xs text-emerald-200/60 italic">{method.islamicNote}</div>
-                <motion.button
-                  className={`mt-4 w-full py-2 rounded-lg text-white font-medium bg-gradient-to-r ${method.color} hover:shadow-lg transition-all duration-300 text-sm`}
+                <div className="text-xs text-emerald-200/60 mb-5 italic">{method.islamicNote}</div>
+                <motion.a
+                href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
+                  className={`mt-4 w-full py-2 px-4  rounded-lg text-white font-medium bg-gradient-to-r ${method.color} hover:shadow-lg transition-all duration-300 text-sm`}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                 >
                   Contact Now
-                </motion.button>
+                </motion.a>
               </motion.div>
             ))}
           </div>
@@ -258,14 +259,15 @@ const HelpCenterPage = () => {
                   {category.description}
                 </p>
 
-                <motion.button
+                <motion.a
+                href="/about"
                   className="w-full py-3 rounded-lg bg-gradient-to-r from-emerald-600 to-teal-700 text-white font-medium hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-3 text-sm"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                 >
                   Explore Islamic Articles
                   <FaArrowRight className="text-xs" />
-                </motion.button>
+                </motion.a>
               </motion.div>
             ))}
           </div>
@@ -292,7 +294,8 @@ const HelpCenterPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-                href="tel:+92300111254882"
+
+                href="tel:+923281969250"
                 className="bg-amber-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-amber-600 transition-all duration-300 shadow-xl flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -302,7 +305,7 @@ const HelpCenterPage = () => {
               </motion.a>
 
               <motion.a
-                href="https://wa.me/923217861111"
+                href="https://wa.me/923281969250"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/20 backdrop-blur-sm border border-amber-400 text-white px-8 py-4 rounded-lg font-bold hover:bg-white/30 transition-all duration-300 flex items-center justify-center gap-3"
@@ -335,7 +338,7 @@ const HelpCenterPage = () => {
           </p>
           <motion.div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
-              href="/islamic-finance"
+              href="/contact-us"
               className="bg-amber-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-amber-600 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -343,7 +346,7 @@ const HelpCenterPage = () => {
               Learn Islamic Finance
             </motion.a>
             <motion.a
-              href="/volunteer"
+              href="/contact-us"
               className="bg-white/10 border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white/20 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

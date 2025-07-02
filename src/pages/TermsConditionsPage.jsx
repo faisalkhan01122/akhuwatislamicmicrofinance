@@ -107,7 +107,7 @@ const TermsConditionsPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-emerald-50">
       {/* Islamic Hero Section */}
-      <section className="relative py-24 overflow-hidden bg-[url('/islamic-pattern-bg.png')] bg-cover">
+      <section className="relative py-24 overflow-hidden bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')] bg-cover">
         <div className="absolute inset-0 bg-emerald-900/90"></div>
         
         <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -225,7 +225,7 @@ const TermsConditionsPage = () => {
       </section>
 
       {/* Islamic Notice Section */}
-      <section className="py-24 bg-[url('/mosque-bg.jpg')] bg-cover bg-center relative">
+      <section className="py-24 bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')] bg-cover bg-center relative">
         <div className="absolute inset-0 bg-emerald-900/90"></div>
         
         <div className="max-w-4xl mx-auto px-4 relative z-10">
@@ -292,7 +292,7 @@ const TermsConditionsPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-                href="/visit-mosque"
+                href="/contact-us"
                 className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white px-8 py-4 rounded-lg font-bold hover:shadow-lg transition-all flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05 }}
               >
@@ -301,7 +301,9 @@ const TermsConditionsPage = () => {
               </motion.a>
 
               <motion.a
-                href="/request-call"
+                href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-lg font-bold hover:bg-emerald-50 transition-all flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05 }}
               >

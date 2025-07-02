@@ -14,7 +14,7 @@ const ImpactPage = () => {
       title: "Ummah's Economic Empowerment",
       description:
         "Through Qard-e-Hasana (benevolent loans), Sister Aisha from Lahore established a modest tailoring business, now employing 12 widows in her community. 'Akhuwat helped me fulfill both my economic needs and Islamic duty of helping others,' she shares.",
-      image: "https://images.unsplash.com/photo-1562169075-25820234781a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-z9IqzTY4LJ0suLWQ1EceLPmpDxGDlpSX0JVacCP9t7wXAtPak4r5u4CC2bljsvSsJnc&usqp=CAU",
       stats: { beneficiaries: "2.5M+", category: "Sadaqah Jariyah Projects" },
       color: "from-green-600 to-emerald-800",
       ayah: "“Who is it that would loan Allah a goodly loan so He may multiply it for him many times over?” (Quran 2:245)"
@@ -23,7 +23,7 @@ const ImpactPage = () => {
       title: "Preserving Islamic Education",
       description:
         "Brother Yusuf completed his Islamic studies degree through our education loans and now teaches at a local madrasa. 'This interest-free support allowed me to seek knowledge without compromising my faith,' he explains.",
-      image: "https://images.unsplash.com/photo-1585036156171-384164a8c675?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "https://hirafoundation.com/wp-content/uploads/2025/05/Importance-of-Islamic-Education-600x400.jpg",
       stats: { beneficiaries: "750K+", category: "Students Supported" },
       color: "from-blue-600 to-indigo-800",
       ayah: "“Allah will raise those who have believed among you and those who were given knowledge by degrees.” (Quran 58:11)"
@@ -32,7 +32,7 @@ const ImpactPage = () => {
       title: "Halal Business Growth",
       description:
         "Brother Ibrahim transformed his small halal grocery into a thriving business with 8 locations. 'Akhuwat's model aligns completely with Islamic principles - no riba, just pure brotherhood,' he states.",
-      image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: "https://halalfoundation.org/wp-content/uploads/2024/10/halal-grocery-1080x600.jpg",
       stats: { beneficiaries: "3M+", category: "Halal Businesses" },
       color: "from-amber-600 to-orange-700",
       ayah: "“Allah has permitted trade and forbidden usury.” (Quran 2:275)"
@@ -87,7 +87,7 @@ const ImpactPage = () => {
   return (
     <>
       <HeroImgSection 
-        imageUrl="/islamic-microfinance.jpg" 
+        imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvr2-rU4Y_9uB7l5myAGpmrHG7CEkXP2wAEg&s" 
         text="Divine Impact Through Islamic Finance" 
         overlayText="In the way of Allah we transform lives"
       />
@@ -202,7 +202,7 @@ const ImpactPage = () => {
 
                   <div className="flex gap-4">
                     <motion.a
-                      href="/stories"
+                      href="/about"
                       className={`bg-gradient-to-r ${story.color} text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300 flex items-center gap-2`}
                       whileHover={{ scale: 1.05, y: -2 }}
                       whileTap={{ scale: 0.95 }}
@@ -210,7 +210,9 @@ const ImpactPage = () => {
                       Read Full Story
                     </motion.a>
                     <motion.a
-                      href="/donate"
+                      href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                       className="bg-white border border-emerald-600 text-emerald-600 px-6 py-3 rounded-lg font-medium hover:bg-emerald-50 transition-all duration-300 flex items-center gap-2"
                       whileHover={{ scale: 1.05, y: -2 }}
                       whileTap={{ scale: 0.95 }}
@@ -297,15 +299,17 @@ const ImpactPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.a
-                href="/donate"
+               href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-amber-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-700 transition-all duration-300 flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Give Qard-e-Hasana
+                Apply Now
               </motion.a>
               <motion.a
-                href="/volunteer"
+                href="/contact-us"
                 className="bg-emerald-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-800 transition-all duration-300 flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -313,7 +317,9 @@ const ImpactPage = () => {
                 Volunteer Service
               </motion.a>
               <motion.a
-                href="/pray"
+               href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white/10 border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}

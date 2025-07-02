@@ -24,7 +24,7 @@ const SectionLoader = () => (
         <div className="w-8 h-8 border-4 border-emerald-200 rounded-full animate-spin"></div>
         <div className="absolute inset-0 w-8 h-8 border-4 border-emerald-600 rounded-full border-t-transparent animate-spin"></div>
       </div>
-      <span className="text-gray-600 font-medium">Loading Akhuwat Network content...</span>
+      <span className="text-gray-600 font-medium">Loading Akhuwat Islamic MicroFinance content...</span>
     </div>
   </div>
 )

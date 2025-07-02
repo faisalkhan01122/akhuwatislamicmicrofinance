@@ -87,7 +87,7 @@ const DisclaimerPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-emerald-50">
       {/* Islamic Hero Section */}
-      <section className="relative py-24 overflow-hidden bg-[url('/islamic-pattern-bg.png')] bg-cover">
+      <section className="relative py-24 overflow-hidden bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')] bg-cover">
         <div className="absolute inset-0 bg-emerald-900/90"></div>
         
         <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -226,7 +226,7 @@ const DisclaimerPage = () => {
       </section>
 
       {/* Islamic Legal Notice */}
-      <section className="py-24 bg-[url('/mosque-bg.jpg')] bg-cover bg-center relative">
+      <section className="py-24 bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')] bg-cover bg-center relative">
         <div className="absolute inset-0 bg-emerald-900/90"></div>
         
         <div className="max-w-4xl mx-auto px-4 relative z-10">

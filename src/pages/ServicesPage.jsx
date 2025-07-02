@@ -16,7 +16,7 @@ const ServicesPage = () => {
       color: "from-emerald-600 to-teal-700",
       features: ["Sharia-compliant financing", "Up to ₨25 Lacs", "No Riba involved", "Business mentoring"],
       ayah: "“Allah has permitted trade and forbidden usury” (Quran 2:275)",
-      href: "/islamic-finance#business"
+      href: "/loans/business"
     },
     {
       title: "Islamic Housing Solutions",
@@ -26,7 +26,7 @@ const ServicesPage = () => {
       color: "from-amber-600 to-orange-600",
       features: ["Interest-free loans", "Family home support", "Islamic contract", "Community guarantee"],
       ayah: "“And Allah has made for you your homes as places of rest” (Quran 16:80)",
-      href: "/islamic-finance#housing"
+      href: "/loans/housing"
     },
     {
       title: "Education Through Sadaqah",
@@ -36,7 +36,7 @@ const ServicesPage = () => {
       color: "from-blue-600 to-indigo-700",
       features: ["Full tuition coverage", "Books & materials", "Islamic studies support", "Merit-based assistance"],
       ayah: "“Allah will raise those who have believed among you and those who were given knowledge” (Quran 58:11)",
-      href: "/islamic-finance#education"
+      href: "/loans/education"
     },
     {
       title: "Islamic Family Support",
@@ -46,7 +46,7 @@ const ServicesPage = () => {
       color: "from-purple-600 to-violet-700",
       features: ["Marriage support", "Emergency funds", "Islamic counseling", "Community assistance"],
       ayah: "“The believers are but brothers” (Quran 49:10)",
-      href: "/islamic-finance#family"
+      href: "/loans/personal"
     },
     {
       title: "Healthcare with Compassion",
@@ -56,7 +56,7 @@ const ServicesPage = () => {
       color: "from-red-600 to-pink-700",
       features: ["Emergency treatment", "Surgical support", "Islamic medical ethics", "Family coverage"],
       ayah: "“And whoever saves a life, it is as though he had saved all mankind” (Quran 5:32)",
-      href: "/islamic-finance#healthcare"
+      href: "/loans/healthcare"
     },
     {
       title: "Islamic Microfinance",
@@ -66,7 +66,7 @@ const ServicesPage = () => {
       color: "from-cyan-600 to-blue-700",
       features: ["Group lending", "Women empowerment", "Skill development", "Community growth"],
       ayah: "“The best charity is that given when you are self-sufficient” (Hadith)",
-      href: "/islamic-finance#microfinance"
+      href: "/loans/microfinance"
     }
   ]
 
@@ -223,7 +223,9 @@ const ServicesPage = () => {
               
               <div className="space-y-4">
                 <motion.a
-                  href="/apply"
+                  href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                   className="block bg-amber-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-amber-600 transition-all"
                   whileHover={{ scale: 1.05 }}
                 >
@@ -231,7 +233,7 @@ const ServicesPage = () => {
                 </motion.a>
                 
                 <motion.a
-                  href="/visit-mosque"
+                  href="/contact-us"
                   className="block bg-white/10 border border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all"
                   whileHover={{ scale: 1.05 }}
                 >
@@ -240,8 +242,8 @@ const ServicesPage = () => {
                 
                 <div className="pt-6 border-t border-emerald-300/20 mt-6">
                   <p className="text-emerald-200 mb-2">Islamic Helpdesk</p>
-                  <a href="tel:+92300111254882" className="text-2xl font-bold text-white hover:text-amber-300">
-                    +92 300 111 AKHUWAT
+                  <a href="tel:+923283281969250" className="text-2xl font-bold text-white hover:text-amber-300">
+                    +92 328 3281 969250 
                   </a>
                 </div>
               </div>

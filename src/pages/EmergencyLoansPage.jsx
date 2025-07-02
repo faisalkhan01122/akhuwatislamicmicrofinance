@@ -185,14 +185,15 @@ const IslamicEmergencySupportPage = () => {
                   <FaArrowRight />
                 </motion.a>
 
-                <motion.button
+                <motion.a 
+                href="tel:+923281969250"
                   className="bg-white/80 backdrop-blur-sm text-nowrap border-2 border-green-600 text-green-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-green-50 transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <FaPhone />
                   Emergency: +92 328 1969250
-                </motion.button>
+                </motion.a>
               </motion.div>
             </motion.div>
 
@@ -203,7 +204,7 @@ const IslamicEmergencySupportPage = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-green-600">
-                <img src="/akhuwat-emergency.jpg" alt="Islamic Emergency Support" className="w-full h-96 object-cover" />
+                <img src="https://media.istockphoto.com/id/1458178579/photo/man-use-calling-sos-emergency-by-phone-call-phone-emergency-application-from-smartphone.jpg?s=612x612&w=0&k=20&c=zeELeMfiPbD33O2V6v7YrNsBtsJRoeLF_XK7Vil7oug=" alt="Islamic Emergency Support" className="w-full h-96 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
                 <motion.div
@@ -422,14 +423,15 @@ const IslamicEmergencySupportPage = () => {
                 Apply for Emergency Support
               </motion.a>
 
-              <motion.button
+              <motion.a
+              href="tel:+923281969250"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaPhone />
                 Emergency: +92 328 1969250
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>

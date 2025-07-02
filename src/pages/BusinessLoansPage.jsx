@@ -59,7 +59,7 @@ const BusinessLoansPage = () => {
     {
       title: "Retail & Trading",
       description: "Halal businesses following Islamic commercial principles",
-      image: "/islamic-shop.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ofhHejBcJoIi-5xpt4s-5fStvJmuSbn--A&s",
       examples: ["Halal Groceries", "Islamic Clothing", "Bookstores", "General Trading"],
       loanRange: "₨50K - ₨15L",
       islamicPrinciple: "Permissible trade in Islam"
@@ -67,7 +67,7 @@ const BusinessLoansPage = () => {
     {
       title: "Islamic Manufacturing",
       description: "Production units adhering to Shariah guidelines",
-      image: "/halal-factory.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQxi6bqvQh_HPHogtYQv0IMxj-OSxhwdXdqQ&s",
       examples: ["Halal Food Processing", "Islamic Textiles", "Educational Materials", "Handicrafts"],
       loanRange: "₨1L - ₨30L",
       islamicPrinciple: "Halal means of production"
@@ -75,7 +75,7 @@ const BusinessLoansPage = () => {
     {
       title: "Islamic Services",
       description: "Service providers operating under Islamic ethics",
-      image: "/islamic-restaurant.jpg",
+      image: "https://www.funeralpartners.co.uk/wp-content/uploads/2020/04/muslim-funerals.jpg",
       examples: ["Halal Restaurants", "Islamic Education", "IT Services", "Healthcare"],
       loanRange: "₨75K - ₨20L",
       islamicPrinciple: "Ethical services in Islam"
@@ -83,7 +83,7 @@ const BusinessLoansPage = () => {
     {
       title: "Islamic Agriculture",
       description: "Farming following Islamic environmental ethics",
-      image: "/islamic-farming.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8bEKt9u2AyGePQscvSNreOUU4pflcJTmdKw&s",
       examples: ["Organic Farming", "Halal Livestock", "Dairy Production", "Date Farming"],
       loanRange: "₨1L - ₨25L",
       islamicPrinciple: "Stewardship of land"
@@ -143,7 +143,7 @@ const BusinessLoansPage = () => {
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
         {/* Islamic Pattern Background */}
-        <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
+        <div className="absolute inset-0 opacity-5 bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')]"></div>
         
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -214,24 +214,29 @@ const BusinessLoansPage = () => {
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
                 <motion.a
-                  href="/apply"
+                  href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                   className="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-8 py-4 rounded-lg font-bold hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <FaHandHoldingHeart />
-                  Apply for Qard-e-Hasna
+                  Apply Now
                   <FaArrowRight />
                 </motion.a>
 
-                <motion.button
+                <motion.a
+                href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                   className="bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-lg font-bold hover:bg-emerald-50 transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <FaPhone />
                   Islamic Consultation
-                </motion.button>
+                </motion.a>
               </motion.div>
             </motion.div>
 
@@ -242,7 +247,7 @@ const BusinessLoansPage = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <div className="relative overflow-hidden rounded-xl shadow-2xl border-2 border-emerald-500/20">
-                <img src="/islamic-business-finance.jpg" alt="Islamic Business Finance" className="w-full h-96 object-cover" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlgR1S8Y53hofdUzB2ZcFNtEiAVjrwjfuW7g&s" alt="Islamic Business Finance" className="w-full h-96 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
 
                 <motion.div
@@ -369,12 +374,14 @@ const BusinessLoansPage = () => {
                     No riba, no hidden fees - just simple Islamic repayment of principal amount only.
                   </p>
                   <motion.a
-                    href="/apply"
+                    href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                     className="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-8 py-4 rounded-lg font-bold hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    Apply for Qard-e-Hasna
+                    Apply Now
                     <FaArrowRight />
                   </motion.a>
                 </div>
@@ -532,7 +539,7 @@ const BusinessLoansPage = () => {
       {/* Islamic CTA Section */}
       <section className="py-24 bg-gradient-to-r from-emerald-700 to-green-600 text-white relative overflow-hidden">
         {/* Islamic Pattern Overlay */}
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
+        <div className="absolute inset-0 opacity-10 bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')]"></div>
 
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <motion.div
@@ -549,17 +556,19 @@ const BusinessLoansPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-                href="/apply"
+                href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white text-emerald-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaHandHoldingHeart />
-                Apply for Qard-e-Hasna
+                Apply Now
               </motion.a>
 
               <motion.a
-                href="/contact"
+                href="/contact-us"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}

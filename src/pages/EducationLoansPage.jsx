@@ -188,14 +188,15 @@ const EducationFundPage = () => {
                   <FaArrowRight />
                 </motion.a>
 
-                <motion.button
+                <motion.a
+                href="tel:+923281969250"
                   className="bg-white/80 backdrop-blur-sm border-2 border-green-600 text-green-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-green-50 transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <FaPhone />
                   Call: +92 328 1969250
-                </motion.button>
+                </motion.a>
               </motion.div>
             </motion.div>
 
@@ -206,7 +207,7 @@ const EducationFundPage = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-green-600">
-                <img src="/akhuwat-education.jpg" alt="Islamic Education Fund" className="w-full h-96 object-cover" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWaSJcSrob75tQSiJRsF38mEmYUaYko_o72w&s" alt="Islamic Education Fund" className="w-full h-96 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
                 <motion.div
@@ -394,7 +395,7 @@ const EducationFundPage = () => {
                 We partner with 150+ educational institutions across Pakistan for seamless fee payments
               </p>
               <motion.a
-                href="/partners"
+                href="/about"
                 className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 mx-auto"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -441,14 +442,15 @@ const EducationFundPage = () => {
                 Apply for Education Fund
               </motion.a>
 
-              <motion.button
+              <motion.a 
+              href="tel:+923281969250"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaPhone />
                 Call: +92 328 1969250
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>

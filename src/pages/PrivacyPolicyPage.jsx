@@ -106,7 +106,7 @@ const PrivacyPolicyPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-emerald-50">
       {/* Islamic Hero Section */}
-      <section className="relative py-24 overflow-hidden bg-[url('/islamic-pattern-bg.png')] bg-cover">
+      <section className="relative py-24 overflow-hidden bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')] bg-cover">
         <div className="absolute inset-0 bg-emerald-900/90"></div>
         
         <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -231,7 +231,7 @@ const PrivacyPolicyPage = () => {
       </section>
 
       {/* Islamic Security Commitment */}
-      <section className="py-24 bg-[url('/mosque-bg.jpg')] bg-cover bg-center relative">
+      <section className="py-24 bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')] bg-cover bg-center relative">
         <div className="absolute inset-0 bg-emerald-900/90"></div>
         
         <div className="max-w-6xl mx-auto px-4 relative z-10">
@@ -315,14 +315,14 @@ const PrivacyPolicyPage = () => {
               <div className="bg-blue-50 rounded-xl p-6">
                 <FaUserShield className="text-3xl text-blue-600 mx-auto mb-4" />
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Data Protection Officer</h3>
-                <p className="text-gray-700">+92 300 111 AKHUWAT</p>
+                <p className="text-gray-700">+92 328 196 9250</p>
                 <p className="text-sm text-gray-600 mt-2">For privacy concerns</p>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-                href="/visit-mosque"
+                href="/contact-us"
                 className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white px-8 py-4 rounded-lg font-bold hover:shadow-lg transition-all flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05 }}
               >
@@ -331,7 +331,9 @@ const PrivacyPolicyPage = () => {
               </motion.a>
 
               <motion.a
-                href="/request-data"
+                href="https://wa.me/923281969250"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-lg font-bold hover:bg-emerald-50 transition-all flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05 }}
               >

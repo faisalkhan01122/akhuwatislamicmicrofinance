@@ -110,7 +110,7 @@ const LoanServicesPage = () => {
       </section>
 
       {/* Why Choose Akhuwat */}
-      <section className="py-20 bg-[url('/islamic-pattern-bg.png')] bg-cover relative">
+      <section className="py-20 bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')] bg-cover relative">
         <div className="absolute inset-0 bg-emerald-900/90"></div>
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">
@@ -184,7 +184,8 @@ const LoanServicesPage = () => {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <motion.a
-              href="tel:+92300111254882"
+              href="tel:+923281969250" 
+              
               className="bg-amber-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-amber-600 transition-all flex items-center gap-3"
               whileHover={{ scale: 1.05 }}
             >
@@ -193,7 +194,7 @@ const LoanServicesPage = () => {
             </motion.a>
             
             <motion.a
-              href="/visit-mosque"
+              href="/contact-us"
               className="bg-white/10 border border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all flex items-center gap-3"
               whileHover={{ scale: 1.05 }}
             >

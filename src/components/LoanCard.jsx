@@ -39,88 +39,125 @@
 // }
 
 // export default LoanCard
+"use client"
 import { motion } from "framer-motion";
+import { FaHandHoldingUsd, FaMosque, FaUsers, FaQuran } from "react-icons/fa";
 
-const LoanCard = ({ img, title, description, linkText, linkUrl }) => {
+const LoanCard = ({ 
+  img, 
+  title, 
+  description, 
+  linkText = "Apply Now", 
+  linkUrl = "#",
+  loanType = "qard-e-hasan" // Default to Qard-e-Hasan
+}) => {
+  // Set icon based on loan type
+  const getIcon = () => {
+    switch(loanType) {
+      case "family-enterprise": return <FaUsers className="text-2xl text-green-600" />;
+      case "education": return <FaQuran className="text-2xl text-green-600" />;
+      case "mosque-based": return <FaMosque className="text-2xl text-green-600" />;
+      default: return <FaHandHoldingUsd className="text-2xl text-green-600" />;
+    }
+  };
+
+  // Set Arabic title based on loan type
+  const getArabicTitle = () => {
+    switch(loanType) {
+      case "family-enterprise": return "تمويل الأسرة";
+      case "education": return "التمويل التعليمي";
+      case "mosque-based": return "القرض المسجدي";
+      default: return "القرض الحسن";
+    }
+  };
+
   return (
     <motion.div
-      className="relative bg-gradient-to-br from-white to-green-50 h-auto min-h-[400px] border border-green-100 shadow-md rounded-xl overflow-hidden group hover:shadow-lg transition duration-300"
-      whileHover={{ y: -5 }}
+      className="relative bg-gradient-to-br from-white to-emerald-50 h-auto min-h-[400px] border border-emerald-100 shadow-lg rounded-xl overflow-hidden group hover:shadow-xl transition duration-300"
+      whileHover={{ y: -8 }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      {/* Ribbon for Islamic Finance */}
-      <div className="absolute top-0 right-0 bg-green-600 text-white text-xs font-bold px-3 py-1 transform rotate-45 translate-x-8 translate-y-4 z-10 w-40 text-center">
-        Interest-Free
+      {/* Islamic Finance Ribbon */}
+      <div className="absolute top-0 right-0 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs font-bold px-3 py-1 transform rotate-45 translate-x-10 translate-y-4 z-10 w-40 text-center shadow-md">
+        حلال التمويل
       </div>
 
       {/* Image with Islamic pattern overlay */}
       <div className="relative overflow-hidden h-48">
         <img
-          src={img}
+          src={img || "/islamic-finance-default.jpg"}
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-green-900/20 to-transparent" />
+        {/* Gradient overlay with subtle Islamic pattern */}
+        <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/30 to-transparent" />
+        {/* Arabic title overlay */}
+        <div className="absolute bottom-4 right-4 bg-white/80 backdrop-blur-sm rounded-lg px-3 py-1 shadow-sm">
+          <p className="text-lg font-bold text-emerald-800">{getArabicTitle()}</p>
+        </div>
       </div>
 
       {/* Content */}
-      <div className="p-6 space-y-4">
-        <div className="flex items-center space-x-2">
-          <div className="p-2 bg-green-100 rounded-lg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-green-600"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
+      <div className="p-6 space-y-5">
+        <div className="flex items-center space-x-3">
+          <div className="p-3 bg-emerald-100 rounded-full shadow-inner">
+            {getIcon()}
           </div>
-          <h3 className="text-xl font-bold text-green-800">{title}</h3>
+          <h3 className="text-xl font-bold text-emerald-800">{title}</h3>
         </div>
 
         <p className="text-gray-600 leading-relaxed text-sm">
           {description}
         </p>
 
-        {linkText && (
-          <motion.a
-            href={linkUrl}
-            className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-green-600 to-green-700 text-white font-medium hover:from-green-700 hover:to-green-800 transition-all shadow-md hover:shadow-lg"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            {linkText}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 ml-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
-          </motion.a>
-        )}
+        {/* Islamic finance features */}
+        <div className="space-y-2">
+          <div className="flex items-center space-x-2 text-sm text-emerald-700">
+            <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+            <span>100% Interest-Free</span>
+          </div>
+          <div className="flex items-center space-x-2 text-sm text-emerald-700">
+            <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+            <span>Sharia-Compliant</span>
+          </div>
+          <div className="flex items-center space-x-2 text-sm text-emerald-700">
+            <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+            <span>Community-Based</span>
+          </div>
+        </div>
+
+        {/* CTA Button */}
+        <motion.a
+          href={linkUrl}
+          className="inline-flex items-center justify-between w-full mt-4 px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-medium hover:from-emerald-700 hover:to-teal-700 transition-all shadow-md hover:shadow-lg"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          <span>{linkText}</span>
+          <span className="text-xs bg-white/20 px-2 py-1 rounded-lg">حلال</span>
+        </motion.a>
       </div>
 
       {/* Islamic pattern border */}
-      <div className="absolute bottom-0 left-0 w-full h-2 bg-repeat-x bg-[length:20px_20px] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48cGF0aCBmaWxsPSIjMzg3ZTZjIiBkPSJNMTAgMTVhNSA1IDAgMSAwIDAtMTAgNSA1IDAgMCAwIDAgMTB6bTAtOGEzIDMgMCAxIDEgMCA2IDMgMyAwIDAgMSAwLTZ6Ii8+PC9zdmc+')]" />
+      <div className="absolute bottom-0 left-0 w-full h-2 bg-emerald-600 overflow-hidden">
+        <div className="absolute inset-0 bg-repeat-x bg-[length:40px_40px] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBmaWxsPSIjZmVmZWZlIiBkPSJNMjAgMjBhNSA1IDAgMSAwIDAtMTAgNSA1IDAgMCAwIDAgMTB6bTAtOGEzIDMgMCAxIDEgMCA2IDMgMyAwIDAgMSAwLTZ6Ii8+PC9zdmc+')]" />
+      </div>
     </motion.div>
   );
 };
+
+// Example usage with Akhuwat content
+export const AkhuwatLoanCardExample = () => (
+  <LoanCard
+    img="/qard-e-hasan.jpg"
+    title="Qard-e-Hasan Loan"
+    description="Interest-free financial assistance following Islamic principles to help families start businesses or meet essential needs without the burden of interest."
+    linkText="Apply for Qard-e-Hasan"
+    linkUrl="/qard-e-hasan"
+    loanType="qard-e-hasan"
+  />
+);
 
 export default LoanCard;

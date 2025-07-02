@@ -223,7 +223,7 @@ const PersonalLoansPage = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-green-600">
-                <img src="/akhuwat-personal.jpg" alt="Islamic Personal Finance" className="w-full h-96 object-cover" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVpboX42Wx4A57AI3Wo4oVHBQx-sHo-EwT6Q&s" alt="Islamic Personal Finance" className="w-full h-96 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
                 <motion.div
@@ -415,7 +415,7 @@ const PersonalLoansPage = () => {
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    Apply for Qard-e-Hasan
+                    Apply Now
                     <FaArrowRight />
                   </motion.a>
                 </div>
@@ -562,17 +562,18 @@ const PersonalLoansPage = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <FaMosque />
-                Apply for Qard-e-Hasan
+                Apply Now
               </motion.a>
 
-              <motion.button
+              <motion.a
+             href="tel:+923281969250"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaPhone />
                 Call: +92 328 1969250
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>

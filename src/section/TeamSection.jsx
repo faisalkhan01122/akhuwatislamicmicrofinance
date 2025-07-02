@@ -84,72 +84,72 @@ const teamMembers = [
     color: "from-amber-600 to-orange-800",
     islamicQuote: "The believer's shade on Judgment Day will be his charity..."
   },
-  {
-    id: 4,
-    name: "Hafiz Asim Ashary",
-    title: "Director of Programs",
-    image: "/yuman-p-300x300.jpg",
-    bio: "Quran hafiz and community development expert who oversees implementation of all Islamic welfare programs including mosques, education and healthcare.",
-    achievements: [
-      "Established 250+ mosque complexes",
-      "Developed Islamic education curriculum",
-      "Implemented Zakat distribution system"
-    ],
-    location: "Faisalabad, Pakistan",
-    experience: "15+ years in Islamic social work",
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      email: "asim@akhuwat.org",
-      phone: "+92-41-111-253-928",
-    },
-    color: "from-purple-600 to-violet-800",
-    islamicQuote: "Whoever relieves a believer's distress, Allah will relieve his distress on Judgment Day..."
-  },
-  {
-    id: 5,
-    name: "Sister Fatima Sheikh",
-    title: "Director Women's Programs",
-    image: "https://indianliberals.in/wp-content/uploads/2022/01/fs.png",
-    bio: "Specialist in Islamic women's empowerment, developing programs that enable Muslim women to become financially independent while maintaining Islamic values.",
-    achievements: [
-      "Estunched 50+ women's Islamic centers",
-      "Trained 100,000+ women in halal income",
-      "Developed hijab-friendly workplaces"
-    ],
-    location: "Multan, Pakistan",
-    experience: "12+ years in Islamic women's welfare",
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      email: "fatima@akhuwat.org",
-      phone: "+92-61-111-253-928",
-    },
-    color: "from-pink-600 to-rose-800",
-    islamicQuote: "The best among you are those who are best to their women..."
-  },
-  {
-    id: 6,
-    name: "Eng. Hassan Ali",
-    title: "Director Technology",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQFy_RQNjG4Z_A/profile-displayphoto-shrink_200_200/B4DZXmxvEuHkAg-/0/1743333552897?e=2147483647&v=beta&t=5L_gaOMDuSIWp0t4ALcW4kAJPy3AfWz9CdfVHOBZGP4",
-    bio: "Develops Islamic fintech solutions to expand access to Shariah-compliant financial services through digital platforms.",
-    achievements: [
-      "Developed Islamic finance app",
-      "Digital Zakat collection system",
-      "Blockchain for transparent Sadaqah"
-    ],
-    location: "Lahore, Pakistan",
-    experience: "10+ years in Islamic tech",
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      email: "hassan@akhuwat.org",
-      phone: "+92-42-111-253-929",
-    },
-    color: "from-teal-600 to-cyan-800",
-    islamicQuote: "Allah loves those who are skillful in their work..."
-  },
+  // {
+  //   id: 4,
+  //   name: "Hafiz Asim Ashary",
+  //   title: "Director of Programs",
+  //   image: "/yuman-p-300x300.jpg",
+  //   bio: "Quran hafiz and community development expert who oversees implementation of all Islamic welfare programs including mosques, education and healthcare.",
+  //   achievements: [
+  //     "Established 250+ mosque complexes",
+  //     "Developed Islamic education curriculum",
+  //     "Implemented Zakat distribution system"
+  //   ],
+  //   location: "Faisalabad, Pakistan",
+  //   experience: "15+ years in Islamic social work",
+  //   social: {
+  //     linkedin: "#",
+  //     twitter: "#",
+  //     email: "asim@akhuwat.org",
+  //     phone: "+92-41-111-253-928",
+  //   },
+  //   color: "from-purple-600 to-violet-800",
+  //   islamicQuote: "Whoever relieves a believer's distress, Allah will relieve his distress on Judgment Day..."
+  // },
+  // {
+  //   id: 5,
+  //   name: "Sister Fatima Sheikh",
+  //   title: "Director Women's Programs",
+  //   image: "https://indianliberals.in/wp-content/uploads/2022/01/fs.png",
+  //   bio: "Specialist in Islamic women's empowerment, developing programs that enable Muslim women to become financially independent while maintaining Islamic values.",
+  //   achievements: [
+  //     "Estunched 50+ women's Islamic centers",
+  //     "Trained 100,000+ women in halal income",
+  //     "Developed hijab-friendly workplaces"
+  //   ],
+  //   location: "Multan, Pakistan",
+  //   experience: "12+ years in Islamic women's welfare",
+  //   social: {
+  //     linkedin: "#",
+  //     twitter: "#",
+  //     email: "fatima@akhuwat.org",
+  //     phone: "+92-61-111-253-928",
+  //   },
+  //   color: "from-pink-600 to-rose-800",
+  //   islamicQuote: "The best among you are those who are best to their women..."
+  // },
+  // {
+  //   id: 6,
+  //   name: "Eng. Hassan Ali",
+  //   title: "Director Technology",
+  //   image: "https://media.licdn.com/dms/image/v2/D4D03AQFy_RQNjG4Z_A/profile-displayphoto-shrink_200_200/B4DZXmxvEuHkAg-/0/1743333552897?e=2147483647&v=beta&t=5L_gaOMDuSIWp0t4ALcW4kAJPy3AfWz9CdfVHOBZGP4",
+  //   bio: "Develops Islamic fintech solutions to expand access to Shariah-compliant financial services through digital platforms.",
+  //   achievements: [
+  //     "Developed Islamic finance app",
+  //     "Digital Zakat collection system",
+  //     "Blockchain for transparent Sadaqah"
+  //   ],
+  //   location: "Lahore, Pakistan",
+  //   experience: "10+ years in Islamic tech",
+  //   social: {
+  //     linkedin: "#",
+  //     twitter: "#",
+  //     email: "hassan@akhuwat.org",
+  //     phone: "+92-42-111-253-929",
+  //   },
+  //   color: "from-teal-600 to-cyan-800",
+  //   islamicQuote: "Allah loves those who are skillful in their work..."
+  // },
 ]
 
 const TeamSection = () => {
@@ -158,7 +158,7 @@ const TeamSection = () => {
   return (
     <section className="py-24 bg-gradient-to-br from-amber-50 via-white to-emerald-50 relative overflow-hidden">
       {/* Islamic Pattern Background */}
-      <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
+      <div className="absolute inset-0 opacity-5 bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')]"></div>
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Islamic Inspired Header */}
@@ -281,7 +281,7 @@ const TeamSection = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <FaHandHoldingHeart className="mr-2" /> Connect for Sadaqah
+                  <FaHandHoldingHeart className="mr-2" /> Connect
                 </motion.a>
               </div>
             </motion.div>
@@ -297,7 +297,7 @@ const TeamSection = () => {
           viewport={{ once: true }}
         >
           {/* Islamic Pattern */}
-          <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')]"></div>
+          <div className="absolute inset-0 opacity-10 bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')]"></div>
 
           <div className="relative z-10">
             <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -342,17 +342,17 @@ const TeamSection = () => {
                   viewport={{ once: true }}
                 >
                   <motion.a
-                    href="/zakat"
+                    href="/contact-us"
                     className="bg-white text-emerald-700 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg flex items-center justify-center gap-3"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     <FaBookQuran />
-                    Give Your Zakat
+                    Connect Now
                   </motion.a>
 
                   <motion.a
-                    href="/volunteer"
+                    href="/contact-us"
                     className="bg-white/10 backdrop-blur-sm border border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
