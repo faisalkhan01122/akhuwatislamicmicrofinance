@@ -80,7 +80,7 @@ const HeroSection = () => {
   return (
     <section className="relative w-full min-h-screen overflow-hidden bg-gray-900">
       {/* Islamic Pattern Background Layer */}
-      <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/islamic-pattern.png')]"></div>
+      <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRopYjCRzwX8oXFupFhoRzCluAIiYNEDOmF-CrGcwtFuN6KTBm19-gBAS3erxVdV5LIpiE&usqp=CAU')]"></div>
       
       {/* Main Slider */}
       <AnimatePresence mode="wait">
@@ -225,7 +225,7 @@ const HeroSection = () => {
                   <FaArrowRight />
                 </motion.div>
               </span>
-              <span className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')] opacity-10"></span>
+              <span className="absolute inset-0 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwsGk-QF-dZpgTWjY-0ee8WRd_4PPOoJmA6cBuGTyCz_Y07V0PgN0GDDxqQEcAVUOlJ0w&usqp=CAU')] opacity-10"></span>
             </motion.a>
 
             <motion.button
@@ -238,7 +238,7 @@ const HeroSection = () => {
                 <FaPlay className="text-lg" />
                 Our Islamic Model
               </span>
-              <span className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')] opacity-5"></span>
+              <span className="absolute inset-0 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRey-K0-x7kivBc0CRyFQEJaYqNImnf2gOMRbHlpRp_hKfmcFveA2wuCVFAOsFPDDQqNHE&usqp=CAU')] opacity-5"></span>
             </motion.button>
           </motion.div>
         </motion.div>
@@ -252,7 +252,7 @@ const HeroSection = () => {
         >
           <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-xl rounded-2xl p-8 shadow-2xl border border-white/20 overflow-hidden">
             {/* Islamic Pattern Overlay */}
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/islamic-pattern.png')] opacity-5"></div>
+            <div className="absolute inset-0 bg-[url('https://static.vecteezy.com/system/resources/previews/014/664/051/non_2x/islamic-ornament-persian-motiff-3d-ramadan-islamic-round-pattern-elements-geometric-circular-ornamental-arabic-symbol-gold-background-vector.jpg')] opacity-5"></div>
             
             {/* Islamic Header */}
             <div className="relative text-center mb-8">
