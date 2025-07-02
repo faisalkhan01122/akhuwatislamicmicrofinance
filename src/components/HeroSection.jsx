@@ -369,11 +369,12 @@ const HeroSection = () => {
               <div className="aspect-video bg-black">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/CkNYmST2olo?autoplay=1"
+                  src="https://www.youtube.com/embed/sAzpGx8yX3g?si=0f7mXNL_SiS1_mB0"
                   title="Akhuwat Islamic Microfinance"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
+                {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/sAzpGx8yX3g?si=0f7mXNL_SiS1_mB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
               </div>
               <div className="bg-gradient-to-r from-emerald-800 to-green-700 p-4 text-center border-t border-emerald-500/30">
                 <h3 className="text-white font-bold text-lg">Akhuwat: An Islamic Solution to Poverty</h3>
