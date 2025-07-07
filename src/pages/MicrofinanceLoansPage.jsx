@@ -197,7 +197,7 @@ const MicrofinanceLoansPage = () => {
                 </motion.a>
 
                 <motion.a
-                href="tel:+923281969250"
+                href="tel:+923354571620"
                   className="bg-white/80 backdrop-blur-sm border-2 border-green-600 text-green-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-green-50 transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
@@ -567,13 +567,13 @@ const MicrofinanceLoansPage = () => {
               </motion.a>
 
               <motion.a
-              href="tel:+923281969250"
+              href="tel:+923354571620"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaPhone />
-                Call: +92 328 1969250
+                Call: +92 335 4571 620
               </motion.a>
             </div>
           </motion.div>

@@ -165,7 +165,7 @@ const AkhuwatScheme = () => {
               viewport={{ once: true }}
             >
               <motion.a
-              href="https://wa.me/923281969250"
+              href="https://wa.me/923354571620"
   target="_blank"
   rel="noopener noreferrer"
                 className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"

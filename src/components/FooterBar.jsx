@@ -6,7 +6,7 @@ const FooterBar = () => {
    <>
   {/* WhatsApp Icon */}
   <motion.a
-    href="https://wa.me/923281969250"
+    href="https://wa.me/923354571620"
     target="_blank"
     rel="noopener noreferrer"
     className="fixed bottom-5 left-6 z-50 bg-green-500 hover:bg-green-600 p-3 sm:p-4 md:p-5 rounded-full shadow-2xl transition-all duration-300 group"
@@ -35,7 +35,7 @@ const FooterBar = () => {
 
   {/* Call Icon */}
   <motion.a
-    href="tel:+92 328 1969250"
+    href="tel:+92 335 4571 620"
     className="fixed bottom-5 right-6 z-50 bg-blue-500 hover:bg-blue-600 p-3 sm:p-4 md:p-5 rounded-full shadow-2xl transition-all duration-300 group"
     initial={{ scale: 0, rotate: 180 }}
     animate={{ scale: 1, rotate: 0 }}

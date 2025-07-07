@@ -214,7 +214,7 @@ const BusinessLoansPage = () => {
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
                 <motion.a
-                  href="https://wa.me/923281969250"
+                  href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                   className="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-8 py-4 rounded-lg font-bold hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
@@ -227,7 +227,7 @@ const BusinessLoansPage = () => {
                 </motion.a>
 
                 <motion.a
-                href="https://wa.me/923281969250"
+                href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                   className="bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-lg font-bold hover:bg-emerald-50 transition-all duration-300 flex items-center justify-center gap-3"
@@ -374,7 +374,7 @@ const BusinessLoansPage = () => {
                     No riba, no hidden fees - just simple Islamic repayment of principal amount only.
                   </p>
                   <motion.a
-                    href="https://wa.me/923281969250"
+                    href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                     className="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-8 py-4 rounded-lg font-bold hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
@@ -556,7 +556,7 @@ const BusinessLoansPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-                href="https://wa.me/923281969250"
+                href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-emerald-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg flex items-center justify-center gap-3"

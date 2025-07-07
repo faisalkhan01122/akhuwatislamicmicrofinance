@@ -184,7 +184,7 @@ const LoanServicesPage = () => {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <motion.a
-              href="tel:+923281969250" 
+              href="tel:+923354571620" 
               
               className="bg-amber-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-amber-600 transition-all flex items-center gap-3"
               whileHover={{ scale: 1.05 }}

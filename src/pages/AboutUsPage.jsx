@@ -392,7 +392,7 @@ const AboutUsPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-                href="https://wa.me/923281969250"
+                href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-emerald-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg flex items-center justify-center gap-3"
@@ -404,7 +404,7 @@ const AboutUsPage = () => {
               </motion.a>
 
               <motion.a
-                href="https://wa.me/923281969250"
+                href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"

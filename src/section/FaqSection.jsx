@@ -342,7 +342,7 @@ const FaqSection = () => {
                 </motion.a>
 
                 <motion.a
-                  href="tel:+923281969250"
+                  href="tel:+923354571620"
                   className="bg-white/10 backdrop-blur-sm border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

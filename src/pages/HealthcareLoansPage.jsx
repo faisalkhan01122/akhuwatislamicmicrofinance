@@ -196,7 +196,7 @@ const HealthcareSupportPage = () => {
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
                 <motion.a
-                  href="https://wa.me/923281969250"
+                  href="https://wa.me/923354571620"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-10 py-5 text-nowrap rounded-full font-bold text-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
@@ -208,13 +208,13 @@ const HealthcareSupportPage = () => {
                 </motion.a>
 
                 <motion.a
-                href="tel:+923281969250"
+                href="tel:+923354571620"
                   className="bg-white/80 backdrop-blur-sm border-2 border-green-600 text-green-600 px-10 py-5 text-nowrap rounded-full font-bold text-xl hover:bg-green-50 transition-all duration-300 flex items-center justify-center gap-3"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <FaPhone />
-                  Emergency: +92 328 1969250
+                  Emergency: +92 335 4571 620
                 </motion.a>
               </motion.div>
             </motion.div>
@@ -448,7 +448,7 @@ const HealthcareSupportPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-                href="https://wa.me/923281969250"
+                href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-green-600 px-12 py-6 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl flex items-center justify-center gap-3"
@@ -460,7 +460,7 @@ const HealthcareSupportPage = () => {
               </motion.a>
 
               <motion.a
-              href="tel:+923281969250"
+              href="tel:+923354571620"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}

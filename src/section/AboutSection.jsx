@@ -328,7 +328,7 @@ const AboutSection = () => {
                 Join us in our mission to create a poverty-free Pakistan through Islamic finance
               </p>
               <motion.a
-                href="https://wa.me/923281969250"
+                href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-white text-emerald-600 font-bold px-8 py-4 rounded-full hover:bg-emerald-50 transition-all duration-300 shadow-xl"

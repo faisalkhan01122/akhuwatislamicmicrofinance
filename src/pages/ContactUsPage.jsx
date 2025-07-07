@@ -53,7 +53,7 @@ const ContactUsPage = () => {
     { 
       city: "Islamabad", 
       address: "House 45, Street 12, F-8/1, Islamabad", 
-      phone: "+92 328 196 9250",
+      phone: "+92 335 4571 q620",
       prayerTimes: "Fajr: 5:00 AM | Dhuhr: 12:30 PM"
     }
   ]
@@ -307,7 +307,7 @@ const ContactUsPage = () => {
                 </h3>
                 <div className="space-y-4">
                   <motion.a
-                  href="tel:+923281969250"
+                  href="tel:+923354571620"
                     className="flex items-center gap-4 p-4 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition-all"
                     whileHover={{ x: 5 }}
                   >
@@ -319,7 +319,7 @@ const ContactUsPage = () => {
                   </motion.a>
 
                   <motion.a
-                   href="https://wa.me/923281969250"
+                   href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 bg-green-50 rounded-xl hover:bg-green-100 transition-all"
@@ -417,7 +417,7 @@ const ContactUsPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
-                href="tel:+92300111254882"
+                href="tel:+923354571620"
                 className="bg-amber-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-amber-600 transition-all flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05 }}
               >

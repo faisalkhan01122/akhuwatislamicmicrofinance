@@ -200,7 +200,7 @@ const HelpCenterPage = () => {
                 <div className="text-sm text-emerald-200/80 mb-3">{method.hours}</div>
                 <div className="text-xs text-emerald-200/60 mb-5 italic">{method.islamicNote}</div>
                 <motion.a
-                href="https://wa.me/923281969250"
+                href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                   className={`mt-4 w-full py-2 px-4  rounded-lg text-white font-medium bg-gradient-to-r ${method.color} hover:shadow-lg transition-all duration-300 text-sm`}
@@ -295,7 +295,7 @@ const HelpCenterPage = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <motion.a
 
-                href="tel:+923281969250"
+                href="tel:+923354571620"
                 className="bg-amber-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-amber-600 transition-all duration-300 shadow-xl flex items-center justify-center gap-3"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -305,7 +305,7 @@ const HelpCenterPage = () => {
               </motion.a>
 
               <motion.a
-                href="https://wa.me/923281969250"
+                href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/20 backdrop-blur-sm border border-amber-400 text-white px-8 py-4 rounded-lg font-bold hover:bg-white/30 transition-all duration-300 flex items-center justify-center gap-3"

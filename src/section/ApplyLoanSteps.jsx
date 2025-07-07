@@ -192,13 +192,14 @@ const ApplyLoanSteps = () => {
             each other. By following these steps and getting involved, applicants can get the help they need to create a
             better future.
           </p>
-          <motion.button
+          <motion.a 
+          href="/contact-us"
             className="bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white px-12 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 font-semibold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             Start Your Application
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>

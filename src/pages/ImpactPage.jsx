@@ -210,7 +210,7 @@ const ImpactPage = () => {
                       Read Full Story
                     </motion.a>
                     <motion.a
-                      href="https://wa.me/923281969250"
+                      href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                       className="bg-white border border-emerald-600 text-emerald-600 px-6 py-3 rounded-lg font-medium hover:bg-emerald-50 transition-all duration-300 flex items-center gap-2"
@@ -299,7 +299,7 @@ const ImpactPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.a
-               href="https://wa.me/923281969250"
+               href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-amber-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-700 transition-all duration-300 flex items-center justify-center gap-2"
@@ -317,7 +317,7 @@ const ImpactPage = () => {
                 Volunteer Service
               </motion.a>
               <motion.a
-               href="https://wa.me/923281969250"
+               href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-2"

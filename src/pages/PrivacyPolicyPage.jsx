@@ -331,7 +331,7 @@ const PrivacyPolicyPage = () => {
               </motion.a>
 
               <motion.a
-                href="https://wa.me/923281969250"
+                href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-lg font-bold hover:bg-emerald-50 transition-all flex items-center justify-center gap-3"

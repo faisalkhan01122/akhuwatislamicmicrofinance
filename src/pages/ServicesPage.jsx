@@ -223,7 +223,7 @@ const ServicesPage = () => {
               
               <div className="space-y-4">
                 <motion.a
-                  href="https://wa.me/923281969250"
+                  href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                   className="block bg-amber-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-amber-600 transition-all"
@@ -243,7 +243,7 @@ const ServicesPage = () => {
                 <div className="pt-6 border-t border-emerald-300/20 mt-6">
                   <p className="text-emerald-200 mb-2">Islamic Helpdesk</p>
                   <a href="tel:+923283281969250" className="text-2xl font-bold text-white hover:text-amber-300">
-                    +92 328 3281 969250 
+                    +92 335 4571 620 
                   </a>
                 </div>
               </div>

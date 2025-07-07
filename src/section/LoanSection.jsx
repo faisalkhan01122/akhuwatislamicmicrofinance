@@ -301,7 +301,7 @@ const LoanSection = () => {
               viewport={{ once: true }}
             >
               <motion.a
-                href="https://wa.me/923281969250"
+                href="https://wa.me/923354571620"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-emerald-600 font-bold px-8 py-4 rounded-full hover:bg-emerald-50 transition-all duration-300 flex items-center gap-3 shadow-xl"
@@ -319,12 +319,12 @@ const LoanSection = () => {
               </motion.a>
 
               <motion.a
-                href="tel:+923281969250"
+                href="tel:+923354571620"
                 className="bg-white/10 border-2 border-white/30 text-white font-bold px-8 py-4 rounded-full hover:bg-white/20 transition-all duration-300 flex items-center gap-3 backdrop-blur-sm"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                📞 Call Now: +92 328 1969250
+                📞 Call Now: +92 335 4571 620
               </motion.a>
             </motion.div>
 
